@@ -621,6 +621,172 @@ namespace RWD.Toolbox.Conversion.UnitTest
             Assert.AreEqual(result, correctValue);
         }
 
+        [TestMethod]
+        public void TonToPounds_null()
+        {
+            // set params
+            double? testValue = null;
+
+            // call method
+            var result = Measurement.TonsToPounds(testValue);
+
+            // assert
+            double? correctValue = null;
+            Assert.AreEqual(result, correctValue);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(OverflowException))]
+        public void TonToPounds_maxDouble()
+        {
+            // set params
+            var testValue = double.MaxValue;
+
+            // call method
+            var result = Measurement.TonsToPounds(testValue);
+
+            // assert is handled by ExpectedException 
+        }
+
+        [TestMethod]
+        public void TonToPounds_validReturn()
+        {
+            // set params
+            var testValue = 1;
+
+            // call method
+            var result = Measurement.TonsToPounds(testValue);
+
+            // assert
+            var correctValue = 2000;
+            Assert.AreEqual(result, correctValue);
+        }
+
+        [TestMethod]
+        public void PoundsToTons_null()
+        {
+            // set params
+            double? testValue = null;
+
+            // call method
+            var result = Measurement.PoundsToTons(testValue);
+
+            // assert
+            double? correctValue = null;
+            Assert.AreEqual(result, correctValue);
+        }
+
+        [TestMethod]
+        public void PoundsToTons_maxDouble()
+        {
+            // set params
+            var testValue = double.MaxValue;
+
+            // call method
+            var result = Measurement.PoundsToTons(testValue);
+
+            // assert
+            double? correctValue = 8.9884656743115778E+304;
+            Assert.AreEqual(result, correctValue);
+        }
+
+        [TestMethod]
+        public void PoundsToTons_validReturn()
+        {
+            // set params
+            var testValue = 1;
+
+            // call method
+            var result = Measurement.PoundsToTons(testValue);
+
+            // assert
+            var correctValue = .0005;
+            Assert.AreEqual(result, correctValue);
+        }
+
+        [TestMethod]
+        public void KiloGramsToMetricTons_null()
+        {
+            // set params
+            double? testValue = null;
+
+            // call method
+            var result = Measurement.KilogramsToMetricTons(testValue);
+
+            // assert
+            double? correctValue = null;
+            Assert.AreEqual(result, correctValue);
+        }
+
+        [TestMethod]
+        public void KiloGramsToMetricTons_maxDouble()
+        {
+            // set params
+            var testValue = double.MaxValue;
+
+            // call method
+            var result = Measurement.KilogramsToMetricTons(testValue);
+
+            // assert
+            double? correctValue = 1.7976931348623156E+305;
+            Assert.AreEqual(result, correctValue);
+        }
+
+        [TestMethod]
+        public void KiloGramsToMetricTons_validReturn()
+        {
+            // set params
+            var testValue = 1;
+
+            // call method
+            var result = Measurement.KilogramsToMetricTons(testValue);
+
+            // assert
+            var correctValue = .001;
+            Assert.AreEqual(result, correctValue);
+        }
+
+        [TestMethod]
+        public void MetricTonsToKilograms_null()
+        {
+            // set params
+            double? testValue = null;
+
+            // call method
+            var result = Measurement.MetricTonsToKilograms(testValue);
+
+            // assert
+            double? correctValue = null;
+            Assert.AreEqual(result, correctValue);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(OverflowException))]
+        public void MetricTonsToKilograms_maxDouble()
+        {
+            // set params
+            var testValue = double.MaxValue;
+
+            // call method
+            var result = Measurement.MetricTonsToKilograms(testValue);
+
+            // assert is handled by ExpectedException 
+        }
+
+        [TestMethod]
+        public void MetricTonsToKilograms_validReturn()
+        {
+            // set params
+            var testValue = 1;
+
+            // call method
+            var result = Measurement.MetricTonsToKilograms(testValue);
+
+            // assert
+            var correctValue = 1000;
+            Assert.AreEqual(result, correctValue);
+        }
+
         #endregion
 
         #region "Volume"
@@ -1934,7 +2100,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var result = Measurement.QuartsToLiters(testValue);
 
             // assert
-            var correctValue =  1.7012521941809277E+308;
+            var correctValue = 1.7012521941809277E+308;
             Assert.AreEqual(result, correctValue);
         }
 

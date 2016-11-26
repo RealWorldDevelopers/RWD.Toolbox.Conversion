@@ -36,7 +36,18 @@
   <PropertyGroup>
     <StartupObject>RWD.Toolbox.Conversion.WinForm.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Toolbox_256x256.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.3.11\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RWD.Toolbox.Conversion, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RWD.Toolbox.Conversion.1.0.1.0\lib\portable-net4+win8\RWD.Toolbox.Conversion.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,6 +67,16 @@
     <Compile Include="Display.Designer.cs">
       <DependentUpon>Display.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExceptionHelper\ExceptionDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExceptionHelper\ExceptionDisplay.Designer.cs">
+      <DependentUpon>ExceptionDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptionHelper\ExceptionHelper.cs" />
+    <Compile Include="ExceptionHelper\ExceptionHelperFactory.cs" />
+    <Compile Include="ExceptionHelper\IExceptionHelper.cs" />
+    <Compile Include="ExceptionHelper\ThreadExceptionHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Display.resx">
@@ -71,6 +92,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -85,10 +113,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RWD.Toolbox.Conversion\RWD.Toolbox.Conversion.csproj">
-      <Project>{bf2a8dbf-d438-4358-9b28-044c7a539972}</Project>
-      <Name>RWD.Toolbox.Conversion</Name>
-    </ProjectReference>
+    <Content Include="Toolbox_256x256.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

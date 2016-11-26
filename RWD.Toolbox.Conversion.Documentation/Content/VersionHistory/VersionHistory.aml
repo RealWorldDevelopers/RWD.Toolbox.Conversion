@@ -14,8 +14,15 @@
 
 				<list class="bullet">
 					<listItem>
-						<para><link xlink:href="ea48f03c-cfba-4dc0-b9ff-4fb6b48d910e" /></para>
+						<para>
+              <link xlink:href="004077d2-0b6b-465d-8701-185ccd77aa4a" />
+            </para>
 					</listItem>
+          <listItem>
+            <para>
+              <link xlink:href="ea48f03c-cfba-4dc0-b9ff-4fb6b48d910e" />
+            </para>
+          </listItem>
 
 					<!--<listItem>
 						<para>[TODO: Add links to each specific version page]</para>

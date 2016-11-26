@@ -9,6 +9,11 @@
     <HelpKeywords>
       <HelpKeyword index="K" term="version, history" />
     </HelpKeywords>
+    <Topic id="004077d2-0b6b-465d-8701-185ccd77aa4a" visible="True" title="Version 1.0.1.0">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="version, 1.0.1.0" />
+      </HelpKeywords>
+    </Topic>
     <Topic id="ea48f03c-cfba-4dc0-b9ff-4fb6b48d910e" visible="True" title="Version 1.0.0.0">
       <HelpKeywords>
         <HelpKeyword index="K" term="version, 1.0.0.0" />

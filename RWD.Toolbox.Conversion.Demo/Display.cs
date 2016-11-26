@@ -1,23 +1,22 @@
 ﻿
+using NLog;
+using RWD.Toolbox.Conversion.WinForm.ExceptionHelper;
 using RWD.Toolbox.Conversion.WinForm.Properties;
 using System;
+using System.IO;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace RWD.Toolbox.Conversion.WinForm
 {
-    // TODO set Icon
-    // TODO Code Analysis  
-    // TODO Max Input Values  
-    // TODO Call dll not tags
-    // TODO Exception handles
+    // TODO Create Installer
+
+    // TODO Commit to Github
 
     public partial class Display : Form
     {
-        public Display()
-        {
-            InitializeComponent();
-        }
+
+        private IExceptionHelper _exceptionHelper;
 
         //Private OrgHeight As Double = 0
         //Private OrgWidth As Double = 0
@@ -30,7 +29,16 @@ namespace RWD.Toolbox.Conversion.WinForm
         private double VolUnits;
 
         private bool OriginalEntry = false;
-        public string TextboxFormat = "###,###.###";
+        private const string TextboxFormat = "###,###.###";
+        private string EntryFormat = "###,###.#";
+        private const string RegEx_Decimal = @"^[+-]?((\d+(\.\d+)?)|(\.\d+))$";
+
+        public Display()
+        {
+            InitializeComponent();
+            ExceptionHelperFactory factory = new ExceptionHelperFactory();
+            _exceptionHelper = factory.CreateNewExceptionHelper();
+        }
 
         private void _Resize(object sender, EventArgs e)
         {
@@ -194,52 +202,22 @@ namespace RWD.Toolbox.Conversion.WinForm
             }
             catch (Exception ex)
             {
-                //  // TODO ExceptionCaught?.Invoke(ex);
+                _exceptionHelper.LogException(ex, LogLevel.Error);
             }
-        }
+        }              
 
         private void _Load(object sender, EventArgs e)
-        {
+        {                       
             // Set window location
             if (Settings.Default.WindowLocation != null)
             {
-                this.Location = Settings.Default.WindowLocation;
+                Location = Settings.Default.WindowLocation;
             }
 
             // Set window size
             if (Settings.Default.WindowSize != null)
             {
-                this.Size = Settings.Default.WindowSize;
-            }
-        }
-
-        private void txt_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            try
-            {
-                // only 1-9
-                if (!Regex.IsMatch(e.KeyChar.ToString(), @"[0-9.]") && !(e.KeyChar == '\b'))
-                {
-                    e.Handled = true;
-                }
-            }
-            catch (Exception ex)
-            {
-                //   // TODO ExceptionCaught?.Invoke(ex);
-                e.Handled = true;
-            }
-        }
-
-        private void txt_MouseDown(object sender, MouseEventArgs e)
-        {
-            try
-            {
-                TextBox txBox = sender as TextBox;
-                txBox.SelectAll();
-            }
-            catch (Exception ex)
-            {
-                //  // TODO ExceptionCaught?.Invoke(ex);
+                Size = Settings.Default.WindowSize;
             }
         }
 
@@ -262,14 +240,14 @@ namespace RWD.Toolbox.Conversion.WinForm
             Settings.Default.Save();
         }
 
-        
+
         #region "Mass Conversions"
 
-        private void English_Mass_TextChanged(object sender, System.EventArgs e)
+        private void English_Mass_TextChanged(object sender, EventArgs e)
         {
+            TextBox txBox = sender as TextBox;
             try
-            {
-                TextBox txBox = sender as TextBox;
+            {                
                 if (!OriginalEntry)
                 {
                     if (string.IsNullOrEmpty(txBox.Text))
@@ -279,41 +257,44 @@ namespace RWD.Toolbox.Conversion.WinForm
                     }
                     else
                     {
-                        OriginalEntry = true;
+                        var rawNum = txBox.Text.Replace(",", "");
+
                         switch (txBox.Name)
                         {
                             case "txtOunces":
-                                MassUnits = Math.Abs(Convert.ToDouble(txBox.Text)) / Convert.ToDouble(txBox.Tag);
+                                MassUnits = Math.Abs(Convert.ToDouble(rawNum)) / Convert.ToDouble(txBox.Tag);
                                 break;
                             default:
-                                MassUnits = Math.Abs(Convert.ToDouble(txBox.Text)) * Convert.ToDouble(txBox.Tag);
+                                MassUnits = Math.Abs(Convert.ToDouble(rawNum)) * Convert.ToDouble(txBox.Tag);
                                 break;
                         }
-                        FillEnglishToMetric_Mass(txBox.Name);
-                        double dValue;
-                        if (double.TryParse(txBox.Text, out dValue))
+
+
+                        if (Regex.IsMatch(rawNum, RegEx_Decimal))
                         {
-                            txBox.Text = dValue.ToString(TextboxFormat);
-                            txBox.SelectionStart = txBox.Text.Length;
-                            txBox.SelectionLength = 0;
+                            OriginalEntry = true;
+                            FillEnglishToMetric_Mass(txBox.Name);
+                            FormatEntryTextbox(txBox);
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                // TODO ExceptionCaught?.Invoke(ex);
-                MassUnits = 0;
+                ex.Data.Add("txBox.Name", txBox.Name);
+                ex.Data.Add("txBox.Text", txBox.Text);
+                _exceptionHelper.LogException(ex, LogLevel.Error);
+                OriginalEntry = false;
                 FillEnglishToMetric_Mass("ALL");
             }
 
         }
 
-        private void Metric_Mass_TextChanged(object sender, System.EventArgs e)
+        private void Metric_Mass_TextChanged(object sender, EventArgs e)
         {
+            TextBox txBox = sender as TextBox;
             try
-            {
-                TextBox txBox = sender as TextBox;
+            {                
                 if (!OriginalEntry)
                 {
                     if (string.IsNullOrEmpty(txBox.Text))
@@ -323,31 +304,32 @@ namespace RWD.Toolbox.Conversion.WinForm
                     }
                     else
                     {
-                        OriginalEntry = true;
+                        var rawNum = txBox.Text.Replace(",", "");
+
                         switch (txBox.Name)
                         {
                             case "txtMetricTons":
-                                MassUnits = Math.Abs(Convert.ToDouble(txBox.Text)) * Convert.ToDouble(txBox.Tag);
+                                MassUnits = Math.Abs(Convert.ToDouble(rawNum)) * Convert.ToDouble(txBox.Tag);
                                 break;
                             default:
-                                MassUnits = Math.Abs(Convert.ToDouble(txBox.Text)) / Convert.ToDouble(txBox.Tag);
+                                MassUnits = Math.Abs(Convert.ToDouble(rawNum)) / Convert.ToDouble(txBox.Tag);
                                 break;
                         }
-                        FillMetricToEnglish_Mass(txBox.Name);
-                        double dValue;
-                        if (double.TryParse(txBox.Text, out dValue))
+                        if (Regex.IsMatch(rawNum, RegEx_Decimal))
                         {
-                            txBox.Text = dValue.ToString(TextboxFormat);
-                            txBox.SelectionStart = txBox.Text.Length;
-                            txBox.SelectionLength = 0;
+                            OriginalEntry = true;
+                            FillMetricToEnglish_Mass(txBox.Name);
+                            FormatEntryTextbox(txBox);
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                // TODO ExceptionCaught?.Invoke(ex);
-                MassUnits = 0;
+                ex.Data.Add("txBox.Name", txBox.Name);
+                ex.Data.Add("txBox.Text", txBox.Text);
+                _exceptionHelper.LogException(ex, LogLevel.Error);
+                OriginalEntry = false;
                 FillMetricToEnglish_Mass("ALL");
             }
         }
@@ -355,30 +337,35 @@ namespace RWD.Toolbox.Conversion.WinForm
         /// <summary>
         /// Recalculate Metric Mass Values
         /// </summary>
+        /// <remarks>If originating textbox is Metric Measurment then VolUnits is in KiloGrams.</remarks>
         private void FillMetricToEnglish_Mass(string SenderName)
         {
             try
             {
+                // MassUnits = KiloGrams
+
                 if (!(SenderName == "txtGrams"))
-                    txtGrams.Text = (MassUnits * 1000).ToString(TextboxFormat);
+                    txtGrams.Text = Measurement.KiloGramsToGrams(MassUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtMilliGrams"))
-                    txtMilliGrams.Text = (MassUnits * 1000000).ToString(TextboxFormat);
+                    txtMilliGrams.Text = Measurement.KiloGramsToMilliGrams(MassUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtKiloGrams"))
                     txtKiloGrams.Text = (MassUnits).ToString(TextboxFormat);
                 if (!(SenderName == "txtMetricTons"))
-                    txtMetricTons.Text = (MassUnits / 1000).ToString(TextboxFormat);
+                    txtMetricTons.Text = Measurement.KilogramsToMetricTons(MassUnits).Value.ToString(TextboxFormat);
 
                 if (!(SenderName == "txtOunces"))
-                    txtOunces.Text = (MassUnits * 35.274).ToString(TextboxFormat);
+                    txtOunces.Text = Measurement.GramsToOunces(Measurement.KiloGramsToGrams(MassUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtPounds"))
-                    txtPounds.Text = (MassUnits * 2.20462).ToString(TextboxFormat);
+                    txtPounds.Text = Measurement.KiloGramsToPounds(MassUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtTons"))
-                    txtTons.Text = (MassUnits / 1016).ToString(TextboxFormat);
+                    txtTons.Text = Measurement.PoundsToTons(Measurement.KiloGramsToPounds(MassUnits).Value).Value.ToString(TextboxFormat);
 
             }
             catch (Exception ex)
             {
-                // TODO ExceptionCaught?.Invoke(ex);
+                ex.Data.Add("SenderName", SenderName);
+                ex.Data.Add("MassUnits", MassUnits);
+                _exceptionHelper.LogException(ex, LogLevel.Error);
                 MassUnits = 0;
                 FillEnglishToMetric_Mass("ALL");
             }
@@ -392,30 +379,35 @@ namespace RWD.Toolbox.Conversion.WinForm
         /// <summary>
         /// Recalculate US Mass Values
         /// </summary>
+        /// <remarks>If originating textbox is US Measurment then VolUnits is in Pounds.</remarks>
         private void FillEnglishToMetric_Mass(string SenderName)
         {
             try
             {
+                // MassUnits = pounds
+
                 if (!(SenderName == "txtGrams"))
-                    txtGrams.Text = (MassUnits * 453.592).ToString(TextboxFormat);
+                    txtGrams.Text = Measurement.KiloGramsToGrams(Measurement.PoundsToKiloGrams(MassUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtMilliGrams"))
-                    txtMilliGrams.Text = (MassUnits * 453592).ToString(TextboxFormat);
+                    txtMilliGrams.Text = Measurement.KiloGramsToMilliGrams(Measurement.PoundsToKiloGrams(MassUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtKiloGrams"))
-                    txtKiloGrams.Text = (MassUnits * 0.453592).ToString(TextboxFormat);
+                    txtKiloGrams.Text = Measurement.PoundsToKiloGrams(MassUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtMetricTons"))
-                    txtMetricTons.Text = (Convert.ToDouble(txtKiloGrams.Text) / 1000).ToString(TextboxFormat);
+                    txtMetricTons.Text = Measurement.KilogramsToMetricTons(Measurement.PoundsToKiloGrams(MassUnits)).Value.ToString(TextboxFormat);
 
                 if (!(SenderName == "txtOunces"))
-                    txtOunces.Text = (MassUnits * 16).ToString(TextboxFormat);
+                    txtOunces.Text = Measurement.PoundsToOunces(MassUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtPounds"))
                     txtPounds.Text = (MassUnits).ToString(TextboxFormat);
                 if (!(SenderName == "txtTons"))
-                    txtTons.Text = (MassUnits / 2239.9).ToString(TextboxFormat);
+                    txtTons.Text = Measurement.PoundsToTons(MassUnits).Value.ToString(TextboxFormat);
 
             }
             catch (Exception ex)
             {
-                // TODO ExceptionCaught?.Invoke(ex);
+                ex.Data.Add("SenderName", SenderName);
+                ex.Data.Add("MassUnits", MassUnits);
+                _exceptionHelper.LogException(ex, LogLevel.Error);
                 MassUnits = 0;
                 FillMetricToEnglish_Mass("ALL");
             }
@@ -426,15 +418,15 @@ namespace RWD.Toolbox.Conversion.WinForm
         }
 
         #endregion
-        
+
 
         #region "Volume Conversions"
 
-        private void English_Vol_TextChanged(object sender, System.EventArgs e)
+        private void English_Vol_TextChanged(object sender, EventArgs e)
         {
+            TextBox txBox = sender as TextBox;
             try
-            {
-                TextBox txBox = sender as TextBox;
+            {               
                 if (!OriginalEntry)
                 {
                     if (string.IsNullOrEmpty(txBox.Text))
@@ -444,23 +436,26 @@ namespace RWD.Toolbox.Conversion.WinForm
                     }
                     else
                     {
-                        OriginalEntry = true;
-                        VolUnits = Math.Abs(Convert.ToDouble(txBox.Text)) / Convert.ToDouble(txBox.Tag);
-                        FillEnglishToMetric_Vol(txBox.Name);
-                        double dValue;
-                        if (double.TryParse(txBox.Text, out dValue))
+                        var rawNum = txBox.Text.Replace(",", "");
+
+                        VolUnits = Math.Abs(Convert.ToDouble(rawNum)) / Convert.ToDouble(txBox.Tag);
+
+                        if (Regex.IsMatch(rawNum, RegEx_Decimal))
                         {
-                            txBox.Text = dValue.ToString(TextboxFormat);
-                            txBox.SelectionStart = txBox.Text.Length;
-                            txBox.SelectionLength = 0;
+                            OriginalEntry = true;
+                            FillEnglishToMetric_Vol(txBox.Name);
+                            FormatEntryTextbox(txBox);
                         }
+
                     }
                 }
             }
             catch (Exception ex)
             {
-                // TODO ExceptionCaught?.Invoke(ex);
-                VolUnits = 0;
+                ex.Data.Add("txBox.Name", txBox.Name);
+                ex.Data.Add("txBox.Text", txBox.Text);
+                _exceptionHelper.LogException(ex, LogLevel.Error);
+                OriginalEntry = false;
                 FillEnglishToMetric_Vol("ALL");
             }
 
@@ -468,9 +463,10 @@ namespace RWD.Toolbox.Conversion.WinForm
 
         private void Metric_Vol_TextChanged(object sender, EventArgs e)
         {
+            TextBox txBox = sender as TextBox;
+
             try
-            {
-                TextBox txBox = sender as TextBox;
+            {                
                 if (!OriginalEntry)
                 {
                     if (string.IsNullOrEmpty(txBox.Text))
@@ -480,24 +476,25 @@ namespace RWD.Toolbox.Conversion.WinForm
                     }
                     else
                     {
-                        OriginalEntry = true;
-                        VolUnits = Math.Abs(Convert.ToDouble(txBox.Text)) * Convert.ToDouble(txBox.Tag);
-                        FillMetricToEnglish_Vol(txBox.Name);
-                        double dValue;
-                        if (double.TryParse(txBox.Text, out dValue))
-                        {
-                            txBox.Text = dValue.ToString(TextboxFormat);
-                            txBox.SelectionStart = txBox.Text.Length;
-                            txBox.SelectionLength = 0;
-                        }
+                        var rawNum = txBox.Text.Replace(",", "");
 
+                        VolUnits = Math.Abs(Convert.ToDouble(rawNum)) * Convert.ToDouble(txBox.Tag);
+
+                        if (Regex.IsMatch(rawNum, RegEx_Decimal))
+                        {
+                            OriginalEntry = true;
+                            FillMetricToEnglish_Vol(txBox.Name);
+                            FormatEntryTextbox(txBox);
+                        }
                     }
                 }
             }
             catch (Exception ex)
             {
-                // TODO ExceptionCaught?.Invoke(ex);
-                VolUnits = 0;
+                ex.Data.Add("txBox.Name", txBox.Name);
+                ex.Data.Add("txBox.Text", txBox.Text);
+                _exceptionHelper.LogException(ex, LogLevel.Error);
+                OriginalEntry = false;
                 FillMetricToEnglish_Vol("ALL");
             }
         }
@@ -505,35 +502,40 @@ namespace RWD.Toolbox.Conversion.WinForm
         /// <summary>
         /// Recalculate Metric Volume Values
         /// </summary>
+        /// <remarks>If originating textbox is Metric Measurment then VolUnits is in Liters.</remarks>
         private void FillMetricToEnglish_Vol(string SenderName)
         {
             try
             {
+                // VolUnits = liters
+
                 if (!(SenderName == "txtMilliLiters"))
-                    txtMilliLiters.Text = (VolUnits * 1000).ToString(TextboxFormat);
+                    txtMilliLiters.Text = Measurement.LitersToMilliLiters(VolUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtLiters"))
                     txtLiters.Text = (VolUnits).ToString(TextboxFormat);
 
                 if (!(SenderName == "txtFluidOunces"))
-                    txtFluidOunces.Text = (VolUnits * 33.814).ToString(TextboxFormat);
+                    txtFluidOunces.Text = Measurement.LitersToOunces(VolUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtGallons"))
-                    txtGallons.Text = (VolUnits / 3.78514).ToString(TextboxFormat);
+                    txtGallons.Text = Measurement.LitersToGallons(VolUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtPints"))
-                    txtPints.Text = (VolUnits * 2.1134).ToString(TextboxFormat);
+                    txtPints.Text = Measurement.QuartsToPints(Measurement.LitersToQuarts(VolUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtCups"))
-                    txtCups.Text = (VolUnits * 4.2268).ToString(TextboxFormat);
+                    txtCups.Text = Measurement.QuartsToCups(Measurement.LitersToQuarts(VolUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtQuarts"))
-                    txtQuarts.Text = (VolUnits * 1.0567).ToString(TextboxFormat);
+                    txtQuarts.Text = Measurement.LitersToQuarts(VolUnits).Value.ToString(TextboxFormat);
 
                 if (!(SenderName == "txtTableSpoons"))
-                    txtTableSpoons.Text = (VolUnits * 67.628).ToString(TextboxFormat);
+                    txtTableSpoons.Text = Measurement.MilliLitersToTablespoons(Measurement.LitersToMilliLiters(VolUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtTeaspoons"))
-                    txtTeaspoons.Text = (VolUnits * 202.884).ToString(TextboxFormat);
+                    txtTeaspoons.Text = Measurement.MilliLitersToTeaspoons(Measurement.LitersToMilliLiters(VolUnits)).Value.ToString(TextboxFormat);
 
             }
             catch (Exception ex)
             {
-                // TODO ExceptionCaught?.Invoke(ex);
+                ex.Data.Add("SenderName", SenderName);
+                ex.Data.Add("VolUnits", VolUnits);
+                _exceptionHelper.LogException(ex, LogLevel.Error);
                 VolUnits = 0;
                 FillEnglishToMetric_Vol("ALL");
             }
@@ -547,35 +549,40 @@ namespace RWD.Toolbox.Conversion.WinForm
         /// <summary>
         /// Recalculate US Volume Values
         /// </summary>
+        /// <remarks>If originating textbox is US Measurment then VolUnits is in Gallons.</remarks>
         private void FillEnglishToMetric_Vol(string SenderName)
         {
             try
             {
+                // VolUnits = gallons
+
                 if (!(SenderName == "txtMilliLiters"))
-                    txtMilliLiters.Text = (VolUnits * 3785.14).ToString(TextboxFormat);
+                    txtMilliLiters.Text = Measurement.LitersToMilliLiters(Measurement.GallonsToLiters(VolUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtLiters"))
-                    txtLiters.Text = (VolUnits * 3.78514).ToString(TextboxFormat);
+                    txtLiters.Text = Measurement.GallonsToLiters(VolUnits).Value.ToString(TextboxFormat);
 
                 if (!(SenderName == "txtFluidOunces"))
-                    txtFluidOunces.Text = (VolUnits * 128).ToString(TextboxFormat);
+                    txtFluidOunces.Text = Measurement.GallonsToOunces(VolUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtGallons"))
                     txtGallons.Text = (VolUnits).ToString(TextboxFormat);
                 if (!(SenderName == "txtPints"))
-                    txtPints.Text = (VolUnits * 8).ToString(TextboxFormat);
+                    txtPints.Text = Measurement.GallonsToPints(VolUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtCups"))
-                    txtCups.Text = (VolUnits * 16).ToString(TextboxFormat);
+                    txtCups.Text = Measurement.GallonsToCups(VolUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtQuarts"))
-                    txtQuarts.Text = (VolUnits * 4).ToString(TextboxFormat);
+                    txtQuarts.Text = Measurement.GallonsToQuarts(VolUnits).Value.ToString(TextboxFormat);
 
                 if (!(SenderName == "txtTableSpoons"))
-                    txtTableSpoons.Text = (VolUnits * 256).ToString(TextboxFormat);
+                    txtTableSpoons.Text = Measurement.OuncesToTablespoons(Measurement.GallonsToOunces(VolUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtTeaspoons"))
-                    txtTeaspoons.Text = (VolUnits * 768).ToString(TextboxFormat);
+                    txtTeaspoons.Text = Measurement.OuncesToTeaspoons(Measurement.GallonsToOunces(VolUnits)).Value.ToString(TextboxFormat);
 
             }
             catch (Exception ex)
             {
-                // TODO ExceptionCaught?.Invoke(ex);
+                ex.Data.Add("SenderName", SenderName);
+                ex.Data.Add("VolUnits", VolUnits);
+                _exceptionHelper.LogException(ex, LogLevel.Error);
                 VolUnits = 0;
                 FillMetricToEnglish_Vol("ALL");
             }
@@ -587,14 +594,15 @@ namespace RWD.Toolbox.Conversion.WinForm
 
         #endregion
 
-        
+
         #region "Temperature Conversion"
 
         private void Temp_TextChanged(object sender, EventArgs e)
         {
+            TextBox txBox = sender as TextBox;
+
             try
-            {
-                TextBox txBox = sender as TextBox;
+            {                
                 if (!OriginalEntry)
                 {
                     if (string.IsNullOrEmpty(txBox.Text))
@@ -619,7 +627,9 @@ namespace RWD.Toolbox.Conversion.WinForm
             }
             catch (Exception ex)
             {
-                // TODO ExceptionCaught?.Invoke(ex);
+                ex.Data.Add("txBox.Name", txBox.Name);
+                ex.Data.Add("txBox.Text", txBox.Text);
+                _exceptionHelper.LogException(ex, LogLevel.Error);
                 txtFahrenheit.Text = "";
                 txtCelcius.Text = "";
             }
@@ -631,6 +641,29 @@ namespace RWD.Toolbox.Conversion.WinForm
 
         #endregion
 
-        
+        private void FormatEntryTextbox(TextBox txBox)
+        {
+            var rawNum = txBox.Text.Replace(",", "");
+
+            double dValue;
+            if (double.TryParse(rawNum, out dValue))
+            {
+                var idx = rawNum.IndexOf('.');
+                if (idx >= 0)
+                {
+                    var p = rawNum.Length - idx - 1;
+                    var std = EntryFormat.Length - EntryFormat.IndexOf('.') - 1;
+                    if (p > std)
+                    {
+                        EntryFormat = EntryFormat.PadRight(EntryFormat.Length + 1, '#');
+                    }
+                }
+
+                txBox.Text = dValue.ToString(EntryFormat);
+                txBox.SelectionStart = txBox.Text.Length;
+                txBox.SelectionLength = 0;
+            }
+        }
+
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Display));
             this.lblMg = new System.Windows.Forms.Label();
             this.lblg = new System.Windows.Forms.Label();
             this.lblTitle_Mass = new System.Windows.Forms.Label();
@@ -143,7 +144,7 @@
             this.txtTons.Name = "txtTons";
             this.txtTons.Size = new System.Drawing.Size(201, 29);
             this.txtTons.TabIndex = 20;
-            this.txtTons.Tag = "2239.9";
+            this.txtTons.Tag = "2000";
             this.txtTons.TextChanged += new System.EventHandler(this.English_Mass_TextChanged);
             // 
             // lblGal
@@ -770,6 +771,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(695, 504);
             this.Controls.Add(this.TabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "Display";
             this.Text = "Conversions";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this._FormClosing);

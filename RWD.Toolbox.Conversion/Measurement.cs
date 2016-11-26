@@ -4,7 +4,7 @@ namespace RWD.Toolbox.Conversion
 {
 
     /// <summary>
-    /// Conversions for Measurements of Temperature, Volume and Mass
+    /// Converts between US and Metric, Measurements of Temperature, Volume and Mass.
     /// </summary>
     public static class Measurement
     {
@@ -214,7 +214,7 @@ namespace RWD.Toolbox.Conversion
         /// </summary>
         /// <param name="lbs">Pounds as <see cref="Nullable{Double}"/></param>
         /// <returns>KiloGrams as <see cref="Nullable{Double}"/></returns>
-        /// <remarks>1 pound =null.45359237 kilograms</remarks>
+        /// <remarks>1 pound = 0.45359237 kilograms</remarks>
         public static double? PoundsToKiloGrams(double? lbs)
         {
             double? kiloGrams = null;
@@ -239,6 +239,70 @@ namespace RWD.Toolbox.Conversion
                     throw new OverflowException("Calculated Value Results in an Overflow");
             }
             return pounds;
+        }
+
+        /// <summary>
+        /// Pounds to US Tons
+        /// </summary>
+        /// <param name="lbs">Pounds as <see cref="Nullable{Double}"/></param>
+        /// <returns>US Tons as <see cref="Nullable{Double}"/></returns>
+        /// <remarks>1 Pound = .0005 US Ton</remarks>
+        public static double? PoundsToTons(double? lbs)
+        {
+            double? tons = null;
+            if (lbs != null)
+                tons = lbs * .0005;
+            return tons;
+        }
+
+        /// <summary>
+        /// US Tons to Pounds
+        /// </summary>
+        /// <param name="ton">Tons as <see cref="Nullable{Double}"/></param>
+        /// <returns>Pounds as <see cref="Nullable{Double}"/></returns>
+        /// <remarks>1 Ton = 2000 Pounds</remarks>
+        public static double? TonsToPounds(double? ton)
+        {
+            double? lbs = null;
+            if (ton != null)
+            {
+                lbs = ton * 2000;
+                if (double.IsInfinity(lbs.Value))
+                    throw new OverflowException("Calculated Value Results in an Overflow");
+            }
+            return lbs;
+        }
+
+        /// <summary>
+        /// Kilograms to Metric Tons
+        /// </summary>
+        /// <param name="kg">Kilograms as <see cref="Nullable{Double}"/></param>
+        /// <returns>Metric Tons as <see cref="Nullable{Double}"/></returns>
+        /// <remarks>1 Kilogram = 0.001 Metric Ton</remarks>
+        public static double? KilogramsToMetricTons(double? kg)
+        {
+            double? tons = null;
+            if (kg != null)
+                tons = kg * .001;
+            return tons;
+        }
+
+        /// <summary>
+        /// Metric Tons to Kilograms
+        /// </summary>
+        /// <param name="ton">Tons as <see cref="Nullable{Double}"/></param>
+        /// <returns>Kilogram as <see cref="Nullable{Double}"/></returns>
+        /// <remarks>1 Ton = 1000 Kilograms</remarks>
+        public static double? MetricTonsToKilograms(double? ton)
+        {
+            double? kg = null;
+            if (ton != null)
+            {
+                kg = ton * 1000;
+                if (double.IsInfinity(kg.Value))
+                    throw new OverflowException("Calculated Value Results in an Overflow");
+            }
+            return kg;
         }
 
         #endregion
