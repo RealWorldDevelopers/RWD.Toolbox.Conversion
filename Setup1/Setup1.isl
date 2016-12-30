@@ -344,7 +344,7 @@
 		<row><td>RWD.Toolbox.Conversion.WinForm.Content_Files</td><td>{711E1307-AABD-453A-8592-4471440BC0F9}</td><td>INSTALLDIR</td><td>2</td><td/><td>rwd.toolbox.conversion.winfo</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>RWD.Toolbox.Conversion.WinForm.Debug_Symbols</td><td>{A6146D6C-755B-474F-87EB-181E01A80E07}</td><td>INSTALLDIR</td><td>2</td><td/><td>rwd.toolbox.conversion.winfo2</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>RWD.Toolbox.Conversion.WinForm.Primary_output</td><td>{19EBE4FC-593B-4195-955C-C8B26CD8D4ED}</td><td>INSTALLDIR</td><td>2</td><td/><td>rwd.toolbox.conversion.winfo1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>RWD.Toolbox.Conversion.dll</td><td>{E8B1C6B7-D6CD-451E-B323-6E9E6B91CF3B}</td><td>INSTALLDIR</td><td>2</td><td/><td>rwd.toolbox.conversion.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>RWD.Toolbox.Conversion.dll</td><td>{CCFC2EA4-4A90-4355-8493-2C8DE2823D51}</td><td>INSTALLDIR</td><td>2</td><td/><td>rwd.toolbox.conversion.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1889,7 +1889,7 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>rwd.toolbox.conversion.dll</td><td>RWD.Toolbox.Conversion.dll</td><td>RWDTOO~1.DLL|RWD.Toolbox.Conversion.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ka8kgj\Desktop\RWD.Toolbox.Conversion\RWD.Toolbox.Conversion.Demo\bin\Release\RWD.Toolbox.Conversion.dll</td><td>1</td><td/></row>
+		<row><td>rwd.toolbox.conversion.dll</td><td>RWD.Toolbox.Conversion.dll</td><td>RWDTOO~1.DLL|RWD.Toolbox.Conversion.dll</td><td>0</td><td/><td/><td/><td>1</td><td>E:\Source\RWD.Toolbox.Conversion\RWD.Toolbox.Conversion.Demo\bin\Release\RWD.Toolbox.Conversion.dll</td><td>1</td><td/></row>
 		<row><td>rwd.toolbox.conversion.winfo</td><td>RWD.Toolbox.Conversion.WinForm.Content_Files</td><td>RWD.Toolbox.Conversion.WinForm.Content Files</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;RWD.Toolbox.Conversion.WinForm&gt;|ContentFiles</td><td>3</td><td/></row>
 		<row><td>rwd.toolbox.conversion.winfo1</td><td>RWD.Toolbox.Conversion.WinForm.Primary_output</td><td>RWD.Toolbox.Conversion.WinForm.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;RWD.Toolbox.Conversion.WinForm&gt;|Built</td><td>3</td><td/></row>
 		<row><td>rwd.toolbox.conversion.winfo2</td><td>RWD.Toolbox.Conversion.WinForm.Debug_Symbols</td><td>RWD.Toolbox.Conversion.WinForm.Debug Symbols</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;RWD.Toolbox.Conversion.WinForm&gt;|Symbols</td><td>3</td><td/></row>
@@ -2037,7 +2037,7 @@
 		<row><td>RWD.Toolbox.Conversion.WinForm.Content_Files</td><td/><td/><td>_40B415BC_BBE1_4C75_BF66_6CFCB92E3AC7_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>RWD.Toolbox.Conversion.WinForm.Debug_Symbols</td><td/><td/><td>_C39B5888_7284_4124_8BD1_BC32511693D2_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>RWD.Toolbox.Conversion.WinForm.Primary_output</td><td/><td/><td>_B12438E4_8411_4B52_8278_27C103D36E98_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>RWD.Toolbox.Conversion.dll</td><td/><td/><td>_EE4F86C9_9B61_4DA8_BDBE_4A4947E30F2E_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>RWD.Toolbox.Conversion.dll</td><td/><td/><td>_84CCAC8C_F080_4123_96F2_7DA051A32B98_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -2593,6 +2593,7 @@
 		<col def="I2">Order</col>
 		<col def="I2">ISSetupLocation</col>
 		<col def="S255">ISReleaseFlags</col>
+		<row><td>_B0307B13_5490_4911_9A89_AF58A4D5F1EA_</td><td>Microsoft .NET Framework 4.5 Full.prq</td><td/><td/><td/></row>
 	</table>
 
 	<table name="ISSetupType">
@@ -2626,7 +2627,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>Real World Developers</td><td>0</td><td/><td>-1113264816</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>Real World Developers</td><td>0</td><td/><td>-433808269</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>-1113264816</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>-1113264816</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>-1113322096</td></row>
@@ -3728,8 +3729,8 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>-1113264816</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>-1113264816</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>-1113264816</td></row>
-		<row><td>ID_STRING1</td><td>1033</td><td>http://www.RealWorldDevelopers.com</td><td>0</td><td/><td>-1113264816</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>Real World Developers</td><td>0</td><td/><td>-1113264816</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>http://www.RealWorldDevelopers.com</td><td>0</td><td/><td>-433808269</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>Real World Developers</td><td>0</td><td/><td>-433808269</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>Launch |Built</td><td>0</td><td/><td>-710665366</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>-1113264816</td></row>
 	</table>
@@ -3963,7 +3964,7 @@
 UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 			</td></row>
 		<row><td>DefaultProductConfiguration</td><td>Express</td></row>
-		<row><td>EnableSwidtag</td><td>1</td></row>
+		<row><td>EnableSwidtag</td><td>0</td></row>
 		<row><td>ISCompilerOption_CompileBeforeBuild</td><td>1</td></row>
 		<row><td>ISCompilerOption_Debug</td><td>0</td></row>
 		<row><td>ISCompilerOption_IncludePath</td><td/></row>
@@ -3977,7 +3978,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{6AB9D597-7512-4403-AC76-0DA9815F51CF}</td></row>
 		<row><td>ISUSSignature</td><td>{8E6FA08D-D0B1-4F92-ACA8-A3A638A2820E}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewUpdateService,viewProject,viewUpgradePaths</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewUpdateService,viewProject,viewUpgradePaths,viewObjects,viewAppFiles</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>

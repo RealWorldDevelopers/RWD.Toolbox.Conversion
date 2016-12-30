@@ -3,16 +3,11 @@ using NLog;
 using RWD.Toolbox.Conversion.WinForm.ExceptionHelper;
 using RWD.Toolbox.Conversion.WinForm.Properties;
 using System;
-using System.IO;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace RWD.Toolbox.Conversion.WinForm
 {
-    // TODO Create Installer
-
-    // TODO Commit to Github
-
     public partial class Display : Form
     {
 
@@ -204,10 +199,10 @@ namespace RWD.Toolbox.Conversion.WinForm
             {
                 _exceptionHelper.LogException(ex, LogLevel.Error);
             }
-        }              
+        }
 
         private void _Load(object sender, EventArgs e)
-        {                       
+        {
             // Set window location
             if (Settings.Default.WindowLocation != null)
             {
@@ -247,7 +242,7 @@ namespace RWD.Toolbox.Conversion.WinForm
         {
             TextBox txBox = sender as TextBox;
             try
-            {                
+            {
                 if (!OriginalEntry)
                 {
                     if (string.IsNullOrEmpty(txBox.Text))
@@ -294,7 +289,7 @@ namespace RWD.Toolbox.Conversion.WinForm
         {
             TextBox txBox = sender as TextBox;
             try
-            {                
+            {
                 if (!OriginalEntry)
                 {
                     if (string.IsNullOrEmpty(txBox.Text))
@@ -345,20 +340,20 @@ namespace RWD.Toolbox.Conversion.WinForm
                 // MassUnits = KiloGrams
 
                 if (!(SenderName == "txtGrams"))
-                    txtGrams.Text = Measurement.KiloGramsToGrams(MassUnits).Value.ToString(TextboxFormat);
+                    txtGrams.Text = Mass.KiloGramsToGrams(MassUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtMilliGrams"))
-                    txtMilliGrams.Text = Measurement.KiloGramsToMilliGrams(MassUnits).Value.ToString(TextboxFormat);
+                    txtMilliGrams.Text = Mass.KiloGramsToMilliGrams(MassUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtKiloGrams"))
                     txtKiloGrams.Text = (MassUnits).ToString(TextboxFormat);
                 if (!(SenderName == "txtMetricTons"))
-                    txtMetricTons.Text = Measurement.KilogramsToMetricTons(MassUnits).Value.ToString(TextboxFormat);
+                    txtMetricTons.Text = Mass.KilogramsToMetricTons(MassUnits).Value.ToString(TextboxFormat);
 
                 if (!(SenderName == "txtOunces"))
-                    txtOunces.Text = Measurement.GramsToOunces(Measurement.KiloGramsToGrams(MassUnits)).Value.ToString(TextboxFormat);
+                    txtOunces.Text = Mass.GramsToOunces(Mass.KiloGramsToGrams(MassUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtPounds"))
-                    txtPounds.Text = Measurement.KiloGramsToPounds(MassUnits).Value.ToString(TextboxFormat);
+                    txtPounds.Text = Mass.KiloGramsToPounds(MassUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtTons"))
-                    txtTons.Text = Measurement.PoundsToTons(Measurement.KiloGramsToPounds(MassUnits).Value).Value.ToString(TextboxFormat);
+                    txtTons.Text = Mass.PoundsToTons(Mass.KiloGramsToPounds(MassUnits).Value).Value.ToString(TextboxFormat);
 
             }
             catch (Exception ex)
@@ -387,20 +382,20 @@ namespace RWD.Toolbox.Conversion.WinForm
                 // MassUnits = pounds
 
                 if (!(SenderName == "txtGrams"))
-                    txtGrams.Text = Measurement.KiloGramsToGrams(Measurement.PoundsToKiloGrams(MassUnits)).Value.ToString(TextboxFormat);
+                    txtGrams.Text = Mass.KiloGramsToGrams(Mass.PoundsToKiloGrams(MassUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtMilliGrams"))
-                    txtMilliGrams.Text = Measurement.KiloGramsToMilliGrams(Measurement.PoundsToKiloGrams(MassUnits)).Value.ToString(TextboxFormat);
+                    txtMilliGrams.Text = Mass.KiloGramsToMilliGrams(Mass.PoundsToKiloGrams(MassUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtKiloGrams"))
-                    txtKiloGrams.Text = Measurement.PoundsToKiloGrams(MassUnits).Value.ToString(TextboxFormat);
+                    txtKiloGrams.Text = Mass.PoundsToKiloGrams(MassUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtMetricTons"))
-                    txtMetricTons.Text = Measurement.KilogramsToMetricTons(Measurement.PoundsToKiloGrams(MassUnits)).Value.ToString(TextboxFormat);
+                    txtMetricTons.Text = Mass.KilogramsToMetricTons(Mass.PoundsToKiloGrams(MassUnits)).Value.ToString(TextboxFormat);
 
                 if (!(SenderName == "txtOunces"))
-                    txtOunces.Text = Measurement.PoundsToOunces(MassUnits).Value.ToString(TextboxFormat);
+                    txtOunces.Text = Mass.PoundsToOunces(MassUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtPounds"))
                     txtPounds.Text = (MassUnits).ToString(TextboxFormat);
                 if (!(SenderName == "txtTons"))
-                    txtTons.Text = Measurement.PoundsToTons(MassUnits).Value.ToString(TextboxFormat);
+                    txtTons.Text = Mass.PoundsToTons(MassUnits).Value.ToString(TextboxFormat);
 
             }
             catch (Exception ex)
@@ -426,7 +421,7 @@ namespace RWD.Toolbox.Conversion.WinForm
         {
             TextBox txBox = sender as TextBox;
             try
-            {               
+            {
                 if (!OriginalEntry)
                 {
                     if (string.IsNullOrEmpty(txBox.Text))
@@ -466,7 +461,7 @@ namespace RWD.Toolbox.Conversion.WinForm
             TextBox txBox = sender as TextBox;
 
             try
-            {                
+            {
                 if (!OriginalEntry)
                 {
                     if (string.IsNullOrEmpty(txBox.Text))
@@ -510,25 +505,25 @@ namespace RWD.Toolbox.Conversion.WinForm
                 // VolUnits = liters
 
                 if (!(SenderName == "txtMilliLiters"))
-                    txtMilliLiters.Text = Measurement.LitersToMilliLiters(VolUnits).Value.ToString(TextboxFormat);
+                    txtMilliLiters.Text = Volume.LitersToMilliLiters(VolUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtLiters"))
                     txtLiters.Text = (VolUnits).ToString(TextboxFormat);
 
                 if (!(SenderName == "txtFluidOunces"))
-                    txtFluidOunces.Text = Measurement.LitersToOunces(VolUnits).Value.ToString(TextboxFormat);
+                    txtFluidOunces.Text = Volume.LitersToOunces(VolUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtGallons"))
-                    txtGallons.Text = Measurement.LitersToGallons(VolUnits).Value.ToString(TextboxFormat);
+                    txtGallons.Text = Volume.LitersToGallons(VolUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtPints"))
-                    txtPints.Text = Measurement.QuartsToPints(Measurement.LitersToQuarts(VolUnits)).Value.ToString(TextboxFormat);
+                    txtPints.Text = Volume.QuartsToPints(Volume.LitersToQuarts(VolUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtCups"))
-                    txtCups.Text = Measurement.QuartsToCups(Measurement.LitersToQuarts(VolUnits)).Value.ToString(TextboxFormat);
+                    txtCups.Text = Volume.QuartsToCups(Volume.LitersToQuarts(VolUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtQuarts"))
-                    txtQuarts.Text = Measurement.LitersToQuarts(VolUnits).Value.ToString(TextboxFormat);
+                    txtQuarts.Text = Volume.LitersToQuarts(VolUnits).Value.ToString(TextboxFormat);
 
                 if (!(SenderName == "txtTableSpoons"))
-                    txtTableSpoons.Text = Measurement.MilliLitersToTablespoons(Measurement.LitersToMilliLiters(VolUnits)).Value.ToString(TextboxFormat);
+                    txtTableSpoons.Text = Volume.MilliLitersToTablespoons(Volume.LitersToMilliLiters(VolUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtTeaspoons"))
-                    txtTeaspoons.Text = Measurement.MilliLitersToTeaspoons(Measurement.LitersToMilliLiters(VolUnits)).Value.ToString(TextboxFormat);
+                    txtTeaspoons.Text = Volume.MilliLitersToTeaspoons(Volume.LitersToMilliLiters(VolUnits)).Value.ToString(TextboxFormat);
 
             }
             catch (Exception ex)
@@ -557,25 +552,25 @@ namespace RWD.Toolbox.Conversion.WinForm
                 // VolUnits = gallons
 
                 if (!(SenderName == "txtMilliLiters"))
-                    txtMilliLiters.Text = Measurement.LitersToMilliLiters(Measurement.GallonsToLiters(VolUnits)).Value.ToString(TextboxFormat);
+                    txtMilliLiters.Text = Volume.LitersToMilliLiters(Volume.GallonsToLiters(VolUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtLiters"))
-                    txtLiters.Text = Measurement.GallonsToLiters(VolUnits).Value.ToString(TextboxFormat);
+                    txtLiters.Text = Volume.GallonsToLiters(VolUnits).Value.ToString(TextboxFormat);
 
                 if (!(SenderName == "txtFluidOunces"))
-                    txtFluidOunces.Text = Measurement.GallonsToOunces(VolUnits).Value.ToString(TextboxFormat);
+                    txtFluidOunces.Text = Volume.GallonsToOunces(VolUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtGallons"))
                     txtGallons.Text = (VolUnits).ToString(TextboxFormat);
                 if (!(SenderName == "txtPints"))
-                    txtPints.Text = Measurement.GallonsToPints(VolUnits).Value.ToString(TextboxFormat);
+                    txtPints.Text = Volume.GallonsToPints(VolUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtCups"))
-                    txtCups.Text = Measurement.GallonsToCups(VolUnits).Value.ToString(TextboxFormat);
+                    txtCups.Text = Volume.GallonsToCups(VolUnits).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtQuarts"))
-                    txtQuarts.Text = Measurement.GallonsToQuarts(VolUnits).Value.ToString(TextboxFormat);
+                    txtQuarts.Text = Volume.GallonsToQuarts(VolUnits).Value.ToString(TextboxFormat);
 
                 if (!(SenderName == "txtTableSpoons"))
-                    txtTableSpoons.Text = Measurement.OuncesToTablespoons(Measurement.GallonsToOunces(VolUnits)).Value.ToString(TextboxFormat);
+                    txtTableSpoons.Text = Volume.OuncesToTablespoons(Volume.GallonsToOunces(VolUnits)).Value.ToString(TextboxFormat);
                 if (!(SenderName == "txtTeaspoons"))
-                    txtTeaspoons.Text = Measurement.OuncesToTeaspoons(Measurement.GallonsToOunces(VolUnits)).Value.ToString(TextboxFormat);
+                    txtTeaspoons.Text = Volume.OuncesToTeaspoons(Volume.GallonsToOunces(VolUnits)).Value.ToString(TextboxFormat);
 
             }
             catch (Exception ex)
@@ -602,7 +597,7 @@ namespace RWD.Toolbox.Conversion.WinForm
             TextBox txBox = sender as TextBox;
 
             try
-            {                
+            {
                 if (!OriginalEntry)
                 {
                     if (string.IsNullOrEmpty(txBox.Text))
@@ -615,12 +610,12 @@ namespace RWD.Toolbox.Conversion.WinForm
                         if (txBox.Name == "txtFahrenheit")
                         {
                             OriginalEntry = true;
-                            txtCelcius.Text = Measurement.ConvertFahrenheitToCelcius(Convert.ToDouble(txtFahrenheit.Text)).ToString();
+                            txtCelcius.Text = Temperature.ConvertFahrenheitToCelcius(Convert.ToDouble(txtFahrenheit.Text)).ToString();
                         }
                         else
                         {
                             OriginalEntry = true;
-                            txtFahrenheit.Text = Measurement.ConvertCelciusToFahrenheit(Convert.ToDouble(txtCelcius.Text)).ToString();
+                            txtFahrenheit.Text = Temperature.ConvertCelciusToFahrenheit(Convert.ToDouble(txtCelcius.Text)).ToString();
                         }
                     }
                 }

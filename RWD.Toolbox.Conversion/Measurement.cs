@@ -2,10 +2,12 @@
 
 namespace RWD.Toolbox.Conversion
 {
+    // TODO Delete the Class
 
     /// <summary>
     /// Converts between US and Metric, Measurements of Temperature, Volume and Mass.
     /// </summary>
+    [Obsolete("Measurement is deprecated, please use Temperature, Mass, or Volume instead.", false)]
     public static class Measurement
     {
         #region "Temperature Conversion"
@@ -15,19 +17,10 @@ namespace RWD.Toolbox.Conversion
         /// </summary>
         /// <param name="celcius">Celcius as <see cref="Nullable{Double}"/></param>
         /// <returns>Fahrenheit as <see cref="Nullable{Double}"/></returns>
-        /// <remarks>Fahrenheit = 1.8 (or 9/5) * Celcius + 32</remarks>
+        /// <remarks>Fahrenheit = 1.8 (or 9/5) * Celcius + 32</remarks>        
         public static double? ConvertCelciusToFahrenheit(double? celcius)
         {
-            double? fahrenheit = null;
-            if (celcius != null)
-            {
-                fahrenheit = 9.0 / 5.0 * celcius + 32;
-
-                if (double.IsInfinity(fahrenheit.Value))
-                    throw new OverflowException("Calculated Value Results in an Overflow");
-            }
-
-            return fahrenheit;
+            return Temperature.ConvertCelciusToFahrenheit(celcius);
         }
 
         /// <summary>
@@ -38,16 +31,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>Celcius = (Fahrenheit - 32) * .5556 (or 5/9)</remarks>
         public static double? ConvertFahrenheitToCelcius(double? fahrenheit)
         {
-            double? celcius = null;
-            if (fahrenheit != null)
-            {
-                celcius = (fahrenheit - 32) * 5.0 / 9.0;
-
-                if (double.IsInfinity(celcius.Value))
-                    throw new OverflowException("Calculated Value Results in an Overflow");
-            }
-
-            return celcius;
+            return Temperature.ConvertFahrenheitToCelcius(fahrenheit);
         }
 
         #endregion
@@ -62,9 +46,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>Same as GramsToMilliGrams(KiloGramsToGrams(Kg))</remarks>
         public static double? KiloGramsToMilliGrams(double? kg)
         {
-            double? milliGrams = null;
-            milliGrams = GramsToMilliGrams(KiloGramsToGrams(kg));
-            return milliGrams;
+            return Mass.KiloGramsToMilliGrams(kg);
         }
 
         /// <summary>
@@ -75,8 +57,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>Same as GramsToKiloGrams(MilligramsToGrams(mg))</remarks>
         public static double? MilligramsToKiloGrams(double? mg)
         {
-            var kiloGrams = GramsToKiloGrams(MilliGramsToGrams(mg));
-            return kiloGrams;
+            return Mass.MilligramsToKiloGrams(mg);
         }
 
         /// <summary>
@@ -87,15 +68,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>1 kilogram = 1000 grams</remarks>
         public static double? KiloGramsToGrams(double? kg)
         {
-            double? grams = null;
-            if (kg != null)
-            {
-                grams = kg * 1000;
-                if (double.IsInfinity(grams.Value))
-                    throw new OverflowException("Calculated Value Results in an Overflow");
-            }
-
-            return grams;
+             return Mass.KiloGramsToGrams(kg);
         }
 
         /// <summary>
@@ -106,10 +79,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>1 gram =null.001 kilograms</remarks>
         public static double? GramsToKiloGrams(double? g)
         {
-            double? kiloGrams = null;
-            if (g != null)
-                kiloGrams = g * 0.001;
-            return kiloGrams;
+            return Mass.GramsToKiloGrams(g);
         }
 
         /// <summary>
@@ -120,15 +90,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>1 gram = 1000 milligrams</remarks>
         public static double? GramsToMilliGrams(double? g)
         {
-            double? milliGrams = null;
-            if (g != null)
-            {
-                milliGrams = g * 1000;
-                if (double.IsInfinity(milliGrams.Value))
-                    throw new OverflowException("Calculated Value Results in an Overflow");
-            }
-
-            return milliGrams;
+            return Mass.GramsToMilliGrams(g);
         }
 
         /// <summary>
@@ -139,10 +101,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>1 milligram =null.001 grams</remarks>
         public static double? MilliGramsToGrams(double? mg)
         {
-            double? grams = null;
-            if (mg != null)
-                grams = mg * 0.001;
-            return grams;
+            return Mass.MilliGramsToGrams(mg);
         }
 
         /// <summary>
@@ -153,10 +112,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>1 ounce =null.0625 pounds</remarks>
         public static double? OuncesToPounds(double? oz)
         {
-            double? pounds = null;
-            if (oz != null)
-                pounds = oz * 0.0625;
-            return pounds;
+            return Mass.OuncesToPounds(oz);
         }
 
         /// <summary>
@@ -167,14 +123,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>1 pound = 16 ounces</remarks>
         public static double? PoundsToOunces(double? lbs)
         {
-            double? ounces = null;
-            if (lbs != null)
-            {
-                ounces = lbs * 16;
-                if (double.IsInfinity(ounces.Value))
-                    throw new OverflowException("Calculated Value Results in an Overflow");
-            }
-            return ounces;
+            return Mass.PoundsToOunces(lbs);
         }
 
         /// <summary>
@@ -185,14 +134,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>1 ounce = 28.3495231 grams</remarks>
         public static double? OuncesToGrams(double? oz)
         {
-            double? grams = null;
-            if (oz != null)
-            {
-                grams = oz * 28.3495231;
-                if (double.IsInfinity(grams.Value))
-                    throw new OverflowException("Calculated Value Results in an Overflow");
-            }
-            return grams;
+            return Mass.OuncesToGrams(oz);
         }
 
         /// <summary>
@@ -203,10 +145,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>1 gram =null.0352739619 ounces</remarks>
         public static double? GramsToOunces(double? g)
         {
-            double? ounces = null;
-            if (g != null)
-                ounces = g * 0.0352739619;
-            return ounces;
+             return Mass.GramsToOunces(g);
         }
 
         /// <summary>
@@ -217,10 +156,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>1 pound = 0.45359237 kilograms</remarks>
         public static double? PoundsToKiloGrams(double? lbs)
         {
-            double? kiloGrams = null;
-            if (lbs != null)
-                kiloGrams = lbs * 0.45359237;
-            return kiloGrams;
+            return Mass.PoundsToKiloGrams(lbs);
         }
 
         /// <summary>
@@ -231,14 +167,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>1 kilogram = 2.20462262 pounds</remarks>
         public static double? KiloGramsToPounds(double? kg)
         {
-            double? pounds = null;
-            if (kg != null)
-            {
-                pounds = kg * 2.20462262;
-                if (double.IsInfinity(pounds.Value))
-                    throw new OverflowException("Calculated Value Results in an Overflow");
-            }
-            return pounds;
+            return Mass.KiloGramsToPounds(kg);
         }
 
         /// <summary>
@@ -249,10 +178,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>1 Pound = .0005 US Ton</remarks>
         public static double? PoundsToTons(double? lbs)
         {
-            double? tons = null;
-            if (lbs != null)
-                tons = lbs * .0005;
-            return tons;
+            return Mass.PoundsToTons(lbs);
         }
 
         /// <summary>
@@ -263,14 +189,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>1 Ton = 2000 Pounds</remarks>
         public static double? TonsToPounds(double? ton)
         {
-            double? lbs = null;
-            if (ton != null)
-            {
-                lbs = ton * 2000;
-                if (double.IsInfinity(lbs.Value))
-                    throw new OverflowException("Calculated Value Results in an Overflow");
-            }
-            return lbs;
+            return Mass.TonsToPounds(ton);
         }
 
         /// <summary>
@@ -281,10 +200,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>1 Kilogram = 0.001 Metric Ton</remarks>
         public static double? KilogramsToMetricTons(double? kg)
         {
-            double? tons = null;
-            if (kg != null)
-                tons = kg * .001;
-            return tons;
+            return Mass.KilogramsToMetricTons(kg);
         }
 
         /// <summary>
@@ -295,14 +211,7 @@ namespace RWD.Toolbox.Conversion
         /// <remarks>1 Ton = 1000 Kilograms</remarks>
         public static double? MetricTonsToKilograms(double? ton)
         {
-            double? kg = null;
-            if (ton != null)
-            {
-                kg = ton * 1000;
-                if (double.IsInfinity(kg.Value))
-                    throw new OverflowException("Calculated Value Results in an Overflow");
-            }
-            return kg;
+            return Mass.MetricTonsToKilograms(ton);
         }
 
         #endregion

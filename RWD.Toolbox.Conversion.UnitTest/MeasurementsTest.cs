@@ -15,7 +15,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 0;
 
             // call method
-            var result = Measurement.ConvertCelciusToFahrenheit(testValue);
+            var result = Temperature.ConvertCelciusToFahrenheit(testValue);
 
             // assert
             var correctValue = 32;
@@ -29,7 +29,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 100;
 
             // call method
-            var result = Measurement.ConvertCelciusToFahrenheit(testValue);
+            var result = Temperature.ConvertCelciusToFahrenheit(testValue);
 
             // assert
             var correctValue = 212;
@@ -43,7 +43,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.ConvertCelciusToFahrenheit(testValue);
+            var result = Temperature.ConvertCelciusToFahrenheit(testValue);
 
             // assert
             double? correctValue = null;
@@ -58,7 +58,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.ConvertCelciusToFahrenheit(testValue);
+            var result = Temperature.ConvertCelciusToFahrenheit(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -71,7 +71,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 32;
 
             // call method
-            var result = Measurement.ConvertFahrenheitToCelcius(testValue);
+            var result = Temperature.ConvertFahrenheitToCelcius(testValue);
 
             // assert
             var correctValue = 0;
@@ -85,7 +85,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 212;
 
             // call method
-            var result = Measurement.ConvertFahrenheitToCelcius(testValue);
+            var result = Temperature.ConvertFahrenheitToCelcius(testValue);
 
             // assert
             var correctValue = 100;
@@ -99,7 +99,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.ConvertFahrenheitToCelcius(testValue);
+            var result = Temperature.ConvertFahrenheitToCelcius(testValue);
 
             // assert
             double? correctValue = null;
@@ -113,7 +113,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.ConvertFahrenheitToCelcius(testValue);
+            var result = Temperature.ConvertFahrenheitToCelcius(testValue);
 
             var correctValue = 9.98718408256842E+307;
             Assert.AreEqual(result, correctValue);
@@ -130,7 +130,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.KiloGramsToMilliGrams(testValue);
+            var result = Mass.KiloGramsToMilliGrams(testValue);
 
             // assert
             double? correctValue = null;
@@ -145,7 +145,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.KiloGramsToMilliGrams(testValue);
+            var result = Mass.KiloGramsToMilliGrams(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -157,7 +157,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.KiloGramsToMilliGrams(testValue);
+            var result = Mass.KiloGramsToMilliGrams(testValue);
 
             // assert
             var correctValue = 1000000;
@@ -171,7 +171,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.MilligramsToKiloGrams(testValue);
+            var result = Mass.MilligramsToKiloGrams(testValue);
 
             // assert
             double? correctValue = null;
@@ -185,7 +185,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.MilligramsToKiloGrams(testValue);
+            var result = Mass.MilligramsToKiloGrams(testValue);
 
             // assert
             var correctValue = 1.7976931348623154E+302;
@@ -199,7 +199,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1000000;
 
             // call method
-            var result = Measurement.MilligramsToKiloGrams(testValue);
+            var result = Mass.MilligramsToKiloGrams(testValue);
 
             // assert
             var correctValue = 1;
@@ -213,7 +213,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.KiloGramsToGrams(testValue);
+            var result = Mass.KiloGramsToGrams(testValue);
 
             // assert
             double? correctValue = null;
@@ -228,7 +228,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.KiloGramsToGrams(testValue);
+            var result = Mass.KiloGramsToGrams(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -240,7 +240,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.KiloGramsToGrams(testValue);
+            var result = Mass.KiloGramsToGrams(testValue);
 
             // assert
             var correctValue = 1000;
@@ -254,7 +254,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.GramsToKiloGrams(testValue);
+            var result = Mass.GramsToKiloGrams(testValue);
 
             // assert
             double? correctValue = null;
@@ -268,7 +268,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.GramsToKiloGrams(testValue);
+            var result = Mass.GramsToKiloGrams(testValue);
 
             // assert
             double? correctValue = 1.7976931348623156E+305;
@@ -282,7 +282,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1000;
 
             // call method
-            var result = Measurement.GramsToKiloGrams(testValue);
+            var result = Mass.GramsToKiloGrams(testValue);
 
             // assert
             var correctValue = 1;
@@ -296,7 +296,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.GramsToMilliGrams(testValue);
+            var result = Mass.GramsToMilliGrams(testValue);
 
             // assert
             double? correctValue = null;
@@ -311,7 +311,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.GramsToMilliGrams(testValue);
+            var result = Mass.GramsToMilliGrams(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -323,7 +323,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.GramsToMilliGrams(testValue);
+            var result = Mass.GramsToMilliGrams(testValue);
 
             // assert
             var correctValue = 1000;
@@ -337,7 +337,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.MilliGramsToGrams(testValue);
+            var result = Mass.MilliGramsToGrams(testValue);
 
             // assert
             double? correctValue = null;
@@ -351,7 +351,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.MilliGramsToGrams(testValue);
+            var result = Mass.MilliGramsToGrams(testValue);
 
             // assert
             var correctValue = 1.7976931348623156E+305;
@@ -365,7 +365,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1000;
 
             // call method
-            var result = Measurement.MilliGramsToGrams(testValue);
+            var result = Mass.MilliGramsToGrams(testValue);
 
             // assert
             var correctValue = 1;
@@ -379,7 +379,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.OuncesToPounds(testValue);
+            var result = Mass.OuncesToPounds(testValue);
 
             // assert
             double? correctValue = null;
@@ -393,7 +393,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.OuncesToPounds(testValue);
+            var result = Mass.OuncesToPounds(testValue);
 
             // assert
             var correctValue = 1.1235582092889473E+307;
@@ -407,7 +407,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 16;
 
             // call method
-            var result = Measurement.OuncesToPounds(testValue);
+            var result = Mass.OuncesToPounds(testValue);
 
             // assert
             var correctValue = 1;
@@ -421,7 +421,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.PoundsToOunces(testValue);
+            var result = Mass.PoundsToOunces(testValue);
 
             // assert
             double? correctValue = null;
@@ -436,7 +436,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.PoundsToOunces(testValue);
+            var result = Mass.PoundsToOunces(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -448,7 +448,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.PoundsToOunces(testValue);
+            var result = Mass.PoundsToOunces(testValue);
 
             // assert
             var correctValue = 16;
@@ -462,7 +462,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.OuncesToGrams(testValue);
+            var result = Mass.OuncesToGrams(testValue);
 
             // assert
             double? correctValue = null;
@@ -477,7 +477,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.OuncesToGrams(testValue);
+            var result = Mass.OuncesToGrams(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -489,7 +489,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.OuncesToGrams(testValue);
+            var result = Mass.OuncesToGrams(testValue);
 
             // assert
             var correctValue = 28.3495231;
@@ -503,7 +503,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.GramsToOunces(testValue);
+            var result = Mass.GramsToOunces(testValue);
 
             // assert
             double? correctValue = null;
@@ -517,7 +517,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.GramsToOunces(testValue);
+            var result = Mass.GramsToOunces(testValue);
 
             // assert
             var correctValue = 6.3411759147024876E+306;
@@ -531,7 +531,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.GramsToOunces(testValue);
+            var result = Mass.GramsToOunces(testValue);
 
             // assert
             var correctValue = 0.0352739619;
@@ -545,7 +545,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.PoundsToKiloGrams(testValue);
+            var result = Mass.PoundsToKiloGrams(testValue);
 
             // assert
             double? correctValue = null;
@@ -559,7 +559,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.PoundsToKiloGrams(testValue);
+            var result = Mass.PoundsToKiloGrams(testValue);
 
             // assert
             var correctValue = 8.1541988957492744E+307;
@@ -573,7 +573,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.PoundsToKiloGrams(testValue);
+            var result = Mass.PoundsToKiloGrams(testValue);
 
             // assert
             var correctValue = 0.45359237;
@@ -587,7 +587,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.KiloGramsToPounds(testValue);
+            var result = Mass.KiloGramsToPounds(testValue);
 
             // assert
             double? correctValue = null;
@@ -602,7 +602,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.KiloGramsToPounds(testValue);
+            var result = Mass.KiloGramsToPounds(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -614,7 +614,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.KiloGramsToPounds(testValue);
+            var result = Mass.KiloGramsToPounds(testValue);
 
             // assert
             var correctValue = 2.20462262;
@@ -628,7 +628,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.TonsToPounds(testValue);
+            var result = Mass.TonsToPounds(testValue);
 
             // assert
             double? correctValue = null;
@@ -643,7 +643,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.TonsToPounds(testValue);
+            var result = Mass.TonsToPounds(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -655,7 +655,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.TonsToPounds(testValue);
+            var result = Mass.TonsToPounds(testValue);
 
             // assert
             var correctValue = 2000;
@@ -669,7 +669,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.PoundsToTons(testValue);
+            var result = Mass.PoundsToTons(testValue);
 
             // assert
             double? correctValue = null;
@@ -683,7 +683,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.PoundsToTons(testValue);
+            var result = Mass.PoundsToTons(testValue);
 
             // assert
             double? correctValue = 8.9884656743115778E+304;
@@ -697,7 +697,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.PoundsToTons(testValue);
+            var result = Mass.PoundsToTons(testValue);
 
             // assert
             var correctValue = .0005;
@@ -711,7 +711,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.KilogramsToMetricTons(testValue);
+            var result = Mass.KilogramsToMetricTons(testValue);
 
             // assert
             double? correctValue = null;
@@ -725,7 +725,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.KilogramsToMetricTons(testValue);
+            var result = Mass.KilogramsToMetricTons(testValue);
 
             // assert
             double? correctValue = 1.7976931348623156E+305;
@@ -739,7 +739,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.KilogramsToMetricTons(testValue);
+            var result = Mass.KilogramsToMetricTons(testValue);
 
             // assert
             var correctValue = .001;
@@ -753,7 +753,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.MetricTonsToKilograms(testValue);
+            var result = Mass.MetricTonsToKilograms(testValue);
 
             // assert
             double? correctValue = null;
@@ -768,7 +768,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.MetricTonsToKilograms(testValue);
+            var result = Mass.MetricTonsToKilograms(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -780,7 +780,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.MetricTonsToKilograms(testValue);
+            var result = Mass.MetricTonsToKilograms(testValue);
 
             // assert
             var correctValue = 1000;
@@ -798,7 +798,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.GallonsToQuarts(testValue);
+            var result = Volume.GallonsToQuarts(testValue);
 
             // assert
             double? correctValue = null;
@@ -813,7 +813,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.GallonsToQuarts(testValue);
+            var result = Volume.GallonsToQuarts(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -825,7 +825,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.GallonsToQuarts(testValue);
+            var result = Volume.GallonsToQuarts(testValue);
 
             // assert
             var correctValue = 4;
@@ -839,7 +839,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.QuartsToGallons(testValue);
+            var result = Volume.QuartsToGallons(testValue);
 
             // assert
             double? correctValue = null;
@@ -853,7 +853,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.QuartsToGallons(testValue);
+            var result = Volume.QuartsToGallons(testValue);
 
             // assert
             var correctValue = 4.4942328371557893E+307;
@@ -867,7 +867,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 4;
 
             // call method
-            var result = Measurement.QuartsToGallons(testValue);
+            var result = Volume.QuartsToGallons(testValue);
 
             // assert
             var correctValue = 1;
@@ -881,7 +881,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.GallonsToPints(testValue);
+            var result = Volume.GallonsToPints(testValue);
 
             // assert
             double? correctValue = null;
@@ -896,7 +896,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.GallonsToPints(testValue);
+            var result = Volume.GallonsToPints(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -908,7 +908,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.GallonsToPints(testValue);
+            var result = Volume.GallonsToPints(testValue);
 
             // assert
             var correctValue = 8;
@@ -922,7 +922,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.PintsToGallons(testValue);
+            var result = Volume.PintsToGallons(testValue);
 
             // assert
             double? correctValue = null;
@@ -936,7 +936,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.PintsToGallons(testValue);
+            var result = Volume.PintsToGallons(testValue);
 
             var correctValue = 2.2471164185778946E+307;
             Assert.AreEqual(result, correctValue);
@@ -949,7 +949,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 8;
 
             // call method
-            var result = Measurement.PintsToGallons(testValue);
+            var result = Volume.PintsToGallons(testValue);
 
             // assert
             var correctValue = 1;
@@ -963,7 +963,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.GallonsToCups(testValue);
+            var result = Volume.GallonsToCups(testValue);
 
             // assert
             double? correctValue = null;
@@ -978,7 +978,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.GallonsToCups(testValue);
+            var result = Volume.GallonsToCups(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -990,7 +990,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.GallonsToCups(testValue);
+            var result = Volume.GallonsToCups(testValue);
 
             // assert
             var correctValue = 16;
@@ -1004,7 +1004,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.CupsToGallons(testValue);
+            var result = Volume.CupsToGallons(testValue);
 
             // assert
             double? correctValue = null;
@@ -1018,7 +1018,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.CupsToGallons(testValue);
+            var result = Volume.CupsToGallons(testValue);
 
             // assert
             var correctValue = 1.1235582092889473E+307;
@@ -1032,7 +1032,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 16;
 
             // call method
-            var result = Measurement.CupsToGallons(testValue);
+            var result = Volume.CupsToGallons(testValue);
 
             // assert
             var correctValue = 1;
@@ -1046,7 +1046,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.GallonsToOunces(testValue);
+            var result = Volume.GallonsToOunces(testValue);
 
             // assert
             double? correctValue = null;
@@ -1061,7 +1061,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.GallonsToOunces(testValue);
+            var result = Volume.GallonsToOunces(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -1073,7 +1073,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.GallonsToOunces(testValue);
+            var result = Volume.GallonsToOunces(testValue);
 
             // assert
             var correctValue = 128;
@@ -1087,7 +1087,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.OuncesToGallons(testValue);
+            var result = Volume.OuncesToGallons(testValue);
 
             // assert
             double? correctValue = null;
@@ -1101,7 +1101,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.OuncesToGallons(testValue);
+            var result = Volume.OuncesToGallons(testValue);
 
             // assert
             var correctValue = 1.4044477616111842E+306;
@@ -1115,7 +1115,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 128;
 
             // call method
-            var result = Measurement.OuncesToGallons(testValue);
+            var result = Volume.OuncesToGallons(testValue);
 
             // assert
             var correctValue = 1;
@@ -1129,7 +1129,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.QuartsToPints(testValue);
+            var result = Volume.QuartsToPints(testValue);
 
             // assert
             double? correctValue = null;
@@ -1144,7 +1144,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.QuartsToPints(testValue);
+            var result = Volume.QuartsToPints(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -1156,7 +1156,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.QuartsToPints(testValue);
+            var result = Volume.QuartsToPints(testValue);
 
             // assert
             var correctValue = 2;
@@ -1170,7 +1170,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.PintsToQuarts(testValue);
+            var result = Volume.PintsToQuarts(testValue);
 
             // assert
             double? correctValue = null;
@@ -1184,7 +1184,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.PintsToQuarts(testValue);
+            var result = Volume.PintsToQuarts(testValue);
 
             // assert
             var correctValue = 8.9884656743115785E+307;
@@ -1198,7 +1198,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 2;
 
             // call method
-            var result = Measurement.PintsToQuarts(testValue);
+            var result = Volume.PintsToQuarts(testValue);
 
             // assert
             var correctValue = 1;
@@ -1212,7 +1212,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.QuartsToCups(testValue);
+            var result = Volume.QuartsToCups(testValue);
 
             // assert
             double? correctValue = null;
@@ -1227,7 +1227,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.QuartsToCups(testValue);
+            var result = Volume.QuartsToCups(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -1239,7 +1239,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.QuartsToCups(testValue);
+            var result = Volume.QuartsToCups(testValue);
 
             // assert
             var correctValue = 4;
@@ -1253,7 +1253,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.CupsToQuarts(testValue);
+            var result = Volume.CupsToQuarts(testValue);
 
             // assert
             double? correctValue = null;
@@ -1267,7 +1267,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.CupsToQuarts(testValue);
+            var result = Volume.CupsToQuarts(testValue);
 
             // assert
             var correctValue = 4.4942328371557893E+307;
@@ -1281,7 +1281,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 4;
 
             // call method
-            var result = Measurement.CupsToQuarts(testValue);
+            var result = Volume.CupsToQuarts(testValue);
 
             // assert
             var correctValue = 1;
@@ -1295,7 +1295,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.QuartsToOunces(testValue);
+            var result = Volume.QuartsToOunces(testValue);
 
             // assert
             double? correctValue = null;
@@ -1310,7 +1310,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.QuartsToOunces(testValue);
+            var result = Volume.QuartsToOunces(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -1322,7 +1322,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.QuartsToOunces(testValue);
+            var result = Volume.QuartsToOunces(testValue);
 
             // assert
             var correctValue = 32;
@@ -1336,7 +1336,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.OuncesToQuarts(testValue);
+            var result = Volume.OuncesToQuarts(testValue);
 
             // assert
             double? correctValue = null;
@@ -1350,7 +1350,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.OuncesToQuarts(testValue);
+            var result = Volume.OuncesToQuarts(testValue);
 
             // assert
             var correctValue = 5.6177910464447366E+306;
@@ -1364,7 +1364,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 32;
 
             // call method
-            var result = Measurement.OuncesToQuarts(testValue);
+            var result = Volume.OuncesToQuarts(testValue);
 
             // assert
             var correctValue = 1;
@@ -1378,7 +1378,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.PintsToCups(testValue);
+            var result = Volume.PintsToCups(testValue);
 
             // assert
             double? correctValue = null;
@@ -1393,7 +1393,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.PintsToCups(testValue);
+            var result = Volume.PintsToCups(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -1405,7 +1405,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.PintsToCups(testValue);
+            var result = Volume.PintsToCups(testValue);
 
             // assert
             var correctValue = 2;
@@ -1419,7 +1419,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.CupsToPints(testValue);
+            var result = Volume.CupsToPints(testValue);
 
             // assert
             double? correctValue = null;
@@ -1433,7 +1433,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.CupsToPints(testValue);
+            var result = Volume.CupsToPints(testValue);
 
             // assert
             var correctValue = 8.9884656743115785E+307;
@@ -1447,7 +1447,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 2;
 
             // call method
-            var result = Measurement.CupsToPints(testValue);
+            var result = Volume.CupsToPints(testValue);
 
             // assert
             var correctValue = 1;
@@ -1461,7 +1461,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.PintsToOunces(testValue);
+            var result = Volume.PintsToOunces(testValue);
 
             // assert
             double? correctValue = null;
@@ -1476,7 +1476,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.PintsToOunces(testValue);
+            var result = Volume.PintsToOunces(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -1488,7 +1488,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.PintsToOunces(testValue);
+            var result = Volume.PintsToOunces(testValue);
 
             // assert
             var correctValue = 16;
@@ -1502,7 +1502,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.OuncesToPints(testValue);
+            var result = Volume.OuncesToPints(testValue);
 
             // assert
             double? correctValue = null;
@@ -1516,7 +1516,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.OuncesToPints(testValue);
+            var result = Volume.OuncesToPints(testValue);
 
             // assert
             var correctValue = 1.1235582092889473E+307;
@@ -1530,7 +1530,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 16;
 
             // call method
-            var result = Measurement.OuncesToPints(testValue);
+            var result = Volume.OuncesToPints(testValue);
 
             // assert
             var correctValue = 1;
@@ -1544,7 +1544,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.CupsToOunces(testValue);
+            var result = Volume.CupsToOunces(testValue);
 
             // assert
             double? correctValue = null;
@@ -1559,7 +1559,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.CupsToOunces(testValue);
+            var result = Volume.CupsToOunces(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -1571,7 +1571,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.CupsToOunces(testValue);
+            var result = Volume.CupsToOunces(testValue);
 
             // assert
             var correctValue = 8;
@@ -1585,7 +1585,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.OuncesToCups(testValue);
+            var result = Volume.OuncesToCups(testValue);
 
             // assert
             double? correctValue = null;
@@ -1599,7 +1599,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.OuncesToCups(testValue);
+            var result = Volume.OuncesToCups(testValue);
 
             // assert
             var correctValue = 2.2471164185778946E+307;
@@ -1613,7 +1613,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 8;
 
             // call method
-            var result = Measurement.OuncesToCups(testValue);
+            var result = Volume.OuncesToCups(testValue);
 
             // assert
             var correctValue = 1;
@@ -1627,7 +1627,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.OuncesToTablespoons(testValue);
+            var result = Volume.OuncesToTablespoons(testValue);
 
             // assert
             double? correctValue = null;
@@ -1642,7 +1642,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.OuncesToTablespoons(testValue);
+            var result = Volume.OuncesToTablespoons(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -1654,7 +1654,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.OuncesToTablespoons(testValue);
+            var result = Volume.OuncesToTablespoons(testValue);
 
             // assert
             var correctValue = 2;
@@ -1668,7 +1668,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.TablespoonsToOunces(testValue);
+            var result = Volume.TablespoonsToOunces(testValue);
 
             // assert
             double? correctValue = null;
@@ -1682,7 +1682,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.TablespoonsToOunces(testValue);
+            var result = Volume.TablespoonsToOunces(testValue);
 
             // assert
             var correctValue = 8.9884656743115785E+307;
@@ -1696,7 +1696,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 2;
 
             // call method
-            var result = Measurement.TablespoonsToOunces(testValue);
+            var result = Volume.TablespoonsToOunces(testValue);
 
             // assert
             var correctValue = 1;
@@ -1710,7 +1710,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.OuncesToTeaspoons(testValue);
+            var result = Volume.OuncesToTeaspoons(testValue);
 
             // assert
             double? correctValue = null;
@@ -1725,7 +1725,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.OuncesToTeaspoons(testValue);
+            var result = Volume.OuncesToTeaspoons(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -1737,7 +1737,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.OuncesToTeaspoons(testValue);
+            var result = Volume.OuncesToTeaspoons(testValue);
 
             // assert
             var correctValue = 6;
@@ -1751,7 +1751,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.TeaspoonsToOunces(testValue);
+            var result = Volume.TeaspoonsToOunces(testValue);
 
             // assert
             double? correctValue = null;
@@ -1765,7 +1765,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.TeaspoonsToOunces(testValue);
+            var result = Volume.TeaspoonsToOunces(testValue);
 
             // assert
             var correctValue = 2.9961552307628363E+307;
@@ -1779,7 +1779,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 6;
 
             // call method
-            var result = Measurement.TeaspoonsToOunces(testValue);
+            var result = Volume.TeaspoonsToOunces(testValue);
 
             // assert
             var correctValue = 1.000000002;
@@ -1793,7 +1793,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.TablespoonsToTeaspoons(testValue);
+            var result = Volume.TablespoonsToTeaspoons(testValue);
 
             // assert
             double? correctValue = null;
@@ -1808,7 +1808,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.TablespoonsToTeaspoons(testValue);
+            var result = Volume.TablespoonsToTeaspoons(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -1820,7 +1820,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.TablespoonsToTeaspoons(testValue);
+            var result = Volume.TablespoonsToTeaspoons(testValue);
 
             // assert
             var correctValue = 3;
@@ -1834,7 +1834,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.TeaspoonsToTablespoons(testValue);
+            var result = Volume.TeaspoonsToTablespoons(testValue);
 
             // assert
             double? correctValue = null;
@@ -1848,7 +1848,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.TeaspoonsToTablespoons(testValue);
+            var result = Volume.TeaspoonsToTablespoons(testValue);
 
             // assert
             var correctValue = 5.9923104495410527E+307;
@@ -1862,7 +1862,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 3;
 
             // call method
-            var result = Measurement.TeaspoonsToTablespoons(testValue);
+            var result = Volume.TeaspoonsToTablespoons(testValue);
 
             // assert
             var correctValue = 1;
@@ -1876,7 +1876,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.LitersToMilliLiters(testValue);
+            var result = Volume.LitersToMilliLiters(testValue);
 
             // assert
             double? correctValue = null;
@@ -1891,7 +1891,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.LitersToMilliLiters(testValue);
+            var result = Volume.LitersToMilliLiters(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -1903,7 +1903,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.LitersToMilliLiters(testValue);
+            var result = Volume.LitersToMilliLiters(testValue);
 
             // assert
             var correctValue = 1000;
@@ -1917,7 +1917,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.MilliLitersToLiters(testValue);
+            var result = Volume.MilliLitersToLiters(testValue);
 
             // assert
             double? correctValue = null;
@@ -1931,7 +1931,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.MilliLitersToLiters(testValue);
+            var result = Volume.MilliLitersToLiters(testValue);
 
             // assert
             var correctValue = 1.7976931348623156E+305;
@@ -1945,7 +1945,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1000;
 
             // call method
-            var result = Measurement.MilliLitersToLiters(testValue);
+            var result = Volume.MilliLitersToLiters(testValue);
 
             // assert
             var correctValue = 1;
@@ -1959,7 +1959,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.LitersToGallons(testValue);
+            var result = Volume.LitersToGallons(testValue);
 
             // assert
             double? correctValue = null;
@@ -1973,7 +1973,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.LitersToGallons(testValue);
+            var result = Volume.LitersToGallons(testValue);
 
             // assert
             double? correctValue = 4.7490028430289061E+307;
@@ -1987,7 +1987,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.LitersToGallons(testValue);
+            var result = Volume.LitersToGallons(testValue);
 
             // assert
             var correctValue = 0.264172052;
@@ -2001,7 +2001,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.GallonsToLiters(testValue);
+            var result = Volume.GallonsToLiters(testValue);
 
             // assert
             double? correctValue = null;
@@ -2016,7 +2016,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.GallonsToLiters(testValue);
+            var result = Volume.GallonsToLiters(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -2028,7 +2028,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.GallonsToLiters(testValue);
+            var result = Volume.GallonsToLiters(testValue);
 
             // assert
             var correctValue = 3.78541178;
@@ -2042,7 +2042,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.LitersToQuarts(testValue);
+            var result = Volume.LitersToQuarts(testValue);
 
             // assert
             double? correctValue = null;
@@ -2057,7 +2057,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.LitersToQuarts(testValue);
+            var result = Volume.LitersToQuarts(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -2069,7 +2069,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.LitersToQuarts(testValue);
+            var result = Volume.LitersToQuarts(testValue);
 
             // assert
             var correctValue = 1.05668821;
@@ -2083,7 +2083,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.QuartsToLiters(testValue);
+            var result = Volume.QuartsToLiters(testValue);
 
             // assert
             double? correctValue = null;
@@ -2097,7 +2097,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.QuartsToLiters(testValue);
+            var result = Volume.QuartsToLiters(testValue);
 
             // assert
             var correctValue = 1.7012521941809277E+308;
@@ -2111,7 +2111,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.QuartsToLiters(testValue);
+            var result = Volume.QuartsToLiters(testValue);
 
             // assert
             var correctValue = 0.946352946;
@@ -2125,7 +2125,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.LitersToOunces(testValue);
+            var result = Volume.LitersToOunces(testValue);
 
             // assert
             double? correctValue = null;
@@ -2140,7 +2140,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.LitersToOunces(testValue);
+            var result = Volume.LitersToOunces(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -2152,7 +2152,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.LitersToOunces(testValue);
+            var result = Volume.LitersToOunces(testValue);
 
             // assert
             var correctValue = 33.8140227;
@@ -2166,7 +2166,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.OuncesToLiters(testValue);
+            var result = Volume.OuncesToLiters(testValue);
 
             // assert
             double? correctValue = null;
@@ -2180,7 +2180,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.OuncesToLiters(testValue);
+            var result = Volume.OuncesToLiters(testValue);
 
             // assert
             var correctValue = 5.3164131135567483E+306;
@@ -2194,7 +2194,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.OuncesToLiters(testValue);
+            var result = Volume.OuncesToLiters(testValue);
 
             // assert
             var correctValue = 0.0295735296;
@@ -2208,7 +2208,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.MilliLitersToOunces(testValue);
+            var result = Volume.MilliLitersToOunces(testValue);
 
             // assert
             double? correctValue = null;
@@ -2222,7 +2222,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.MilliLitersToOunces(testValue);
+            var result = Volume.MilliLitersToOunces(testValue);
 
             // assert
             var correctValue = 6.07872364698685E+306;
@@ -2236,7 +2236,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.MilliLitersToOunces(testValue);
+            var result = Volume.MilliLitersToOunces(testValue);
 
             // assert
             var correctValue = 0.0338140227;
@@ -2250,7 +2250,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.OuncesToMilliLiters(testValue);
+            var result = Volume.OuncesToMilliLiters(testValue);
 
             // assert
             double? correctValue = null;
@@ -2265,7 +2265,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.OuncesToMilliLiters(testValue);
+            var result = Volume.OuncesToMilliLiters(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -2277,7 +2277,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.OuncesToMilliLiters(testValue);
+            var result = Volume.OuncesToMilliLiters(testValue);
 
             // assert
             var correctValue = 29.5735296;
@@ -2291,7 +2291,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.MilliLitersToTablespoons(testValue);
+            var result = Volume.MilliLitersToTablespoons(testValue);
 
             // assert
             double? correctValue = null;
@@ -2305,7 +2305,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.MilliLitersToTablespoons(testValue);
+            var result = Volume.MilliLitersToTablespoons(testValue);
 
             // assert
             double? correctValue = 1.21574472939737E+307;
@@ -2319,7 +2319,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.MilliLitersToTablespoons(testValue);
+            var result = Volume.MilliLitersToTablespoons(testValue);
 
             // assert
             var correctValue = 0.0676280454;
@@ -2333,7 +2333,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.TablespoonsToMilliLiters(testValue);
+            var result = Volume.TablespoonsToMilliLiters(testValue);
 
             // assert
             double? correctValue = null;
@@ -2348,7 +2348,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.TablespoonsToMilliLiters(testValue);
+            var result = Volume.TablespoonsToMilliLiters(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -2360,7 +2360,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.TablespoonsToMilliLiters(testValue);
+            var result = Volume.TablespoonsToMilliLiters(testValue);
 
             // assert
             var correctValue = 14.7867648;
@@ -2374,7 +2374,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.MilliLitersToTeaspoons(testValue);
+            var result = Volume.MilliLitersToTeaspoons(testValue);
 
             // assert
             double? correctValue = null;
@@ -2388,7 +2388,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.MilliLitersToTeaspoons(testValue);
+            var result = Volume.MilliLitersToTeaspoons(testValue);
 
             // assert
             var correctValue = 3.6472341845967238E+307;
@@ -2402,7 +2402,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.MilliLitersToTeaspoons(testValue);
+            var result = Volume.MilliLitersToTeaspoons(testValue);
 
             // assert
             var correctValue = 0.202884136;
@@ -2416,7 +2416,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             double? testValue = null;
 
             // call method
-            var result = Measurement.TeaspoonsToMilliLiters(testValue);
+            var result = Volume.TeaspoonsToMilliLiters(testValue);
 
             // assert
             double? correctValue = null;
@@ -2431,7 +2431,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = double.MaxValue;
 
             // call method
-            var result = Measurement.TeaspoonsToMilliLiters(testValue);
+            var result = Volume.TeaspoonsToMilliLiters(testValue);
 
             // assert is handled by ExpectedException 
         }
@@ -2443,7 +2443,7 @@ namespace RWD.Toolbox.Conversion.UnitTest
             var testValue = 1;
 
             // call method
-            var result = Measurement.TeaspoonsToMilliLiters(testValue);
+            var result = Volume.TeaspoonsToMilliLiters(testValue);
 
             // assert
             var correctValue = 4.92892159;
