@@ -1,4 +1,6 @@
 ﻿
+// Copyright(C) 2016  Real World Developers (www.realworlddevelopers.com) 
+
 using NLog;
 using RWD.Toolbox.Conversion.WinForm.ExceptionHelper;
 using RWD.Toolbox.Conversion.WinForm.Properties;
@@ -8,6 +10,13 @@ using System.Windows.Forms;
 
 namespace RWD.Toolbox.Conversion.WinForm
 {
+    // ******** Notes **********
+
+    // logic mimics usable logic within Xamarin.Forms
+    //    1) Xamarin.Forms does not have a KeyPress Event
+
+    // *************************
+
     public partial class Display : Form
     {
 
@@ -20,12 +29,11 @@ namespace RWD.Toolbox.Conversion.WinForm
 
         private int MarginSpace = 10;
         private double MassUnits;
-
         private double VolUnits;
 
         private bool OriginalEntry = false;
         private const string TextboxFormat = "###,###.###";
-        private string EntryFormat = "###,###.#";
+        private string EntryFormat = "###,##0";
         private const string RegEx_Decimal = @"^[+-]?((\d+(\.\d+)?)|(\.\d+))$";
 
         public Display()
@@ -241,36 +249,55 @@ namespace RWD.Toolbox.Conversion.WinForm
         private void English_Mass_TextChanged(object sender, EventArgs e)
         {
             TextBox txBox = sender as TextBox;
+            if (txBox.Text.StartsWith("."))
+            {
+                txBox.Text = "0.";
+                txBox.SelectionStart = txBox.Text.Length;
+                txBox.SelectionLength = 0;
+            }
+            var rawNum = txBox.Text.Replace(",", "");
+            if (rawNum.EndsWith("."))
+                rawNum += "0";
+
             try
             {
                 if (!OriginalEntry)
                 {
+                    OriginalEntry = true;
                     if (string.IsNullOrEmpty(txBox.Text))
                     {
                         MassUnits = 0;
                         FillEnglishToMetric_Mass("ALL");
+                        OriginalEntry = false;
                     }
                     else
                     {
-                        var rawNum = txBox.Text.Replace(",", "");
-
-                        switch (txBox.Name)
-                        {
-                            case "txtOunces":
-                                MassUnits = Math.Abs(Convert.ToDouble(rawNum)) / Convert.ToDouble(txBox.Tag);
-                                break;
-                            default:
-                                MassUnits = Math.Abs(Convert.ToDouble(rawNum)) * Convert.ToDouble(txBox.Tag);
-                                break;
-                        }
-
-
                         if (Regex.IsMatch(rawNum, RegEx_Decimal))
                         {
-                            OriginalEntry = true;
-                            FillEnglishToMetric_Mass(txBox.Name);
-                            FormatEntryTextbox(txBox);
+                            switch (txBox.Name)
+                            {
+                                case "txtOunces":
+                                    MassUnits = Math.Abs(Convert.ToDouble(rawNum)) / Convert.ToDouble(txBox.Tag);
+                                    break;
+                                default:
+                                    MassUnits = Math.Abs(Convert.ToDouble(rawNum)) * Convert.ToDouble(txBox.Tag);
+                                    break;
+                            }
+
+                            if (Regex.IsMatch(txBox.Text, RegEx_Decimal))
+                            {
+                                FillEnglishToMetric_Mass(txBox.Name);
+                                FormatEntryTextbox(txBox);
+                            }
                         }
+                        else
+                        {
+                            txBox.Text = txBox.Text.Substring(0, txBox.Text.Length - 1);
+                            txBox.SelectionStart = txBox.Text.Length;
+                            txBox.SelectionLength = 0;
+                        }
+
+                        OriginalEntry = false;
                     }
                 }
             }
@@ -288,34 +315,56 @@ namespace RWD.Toolbox.Conversion.WinForm
         private void Metric_Mass_TextChanged(object sender, EventArgs e)
         {
             TextBox txBox = sender as TextBox;
+            if (txBox.Text.StartsWith("."))
+            {
+                txBox.Text = "0.";
+                txBox.SelectionStart = txBox.Text.Length;
+                txBox.SelectionLength = 0;
+            }
+            var rawNum = txBox.Text.Replace(",", "");
+            if (rawNum.EndsWith("."))
+                rawNum += "0";
+
             try
             {
                 if (!OriginalEntry)
                 {
+                    OriginalEntry = true;
                     if (string.IsNullOrEmpty(txBox.Text))
                     {
                         MassUnits = 0;
                         FillMetricToEnglish_Mass("ALL");
+                        OriginalEntry = false;
                     }
                     else
                     {
-                        var rawNum = txBox.Text.Replace(",", "");
-
-                        switch (txBox.Name)
-                        {
-                            case "txtMetricTons":
-                                MassUnits = Math.Abs(Convert.ToDouble(rawNum)) * Convert.ToDouble(txBox.Tag);
-                                break;
-                            default:
-                                MassUnits = Math.Abs(Convert.ToDouble(rawNum)) / Convert.ToDouble(txBox.Tag);
-                                break;
-                        }
                         if (Regex.IsMatch(rawNum, RegEx_Decimal))
                         {
-                            OriginalEntry = true;
-                            FillMetricToEnglish_Mass(txBox.Name);
-                            FormatEntryTextbox(txBox);
+                            switch (txBox.Name)
+                            {
+                                case "txtMetricTons":
+                                    MassUnits = Math.Abs(Convert.ToDouble(rawNum)) * Convert.ToDouble(txBox.Tag);
+                                    break;
+                                default:
+                                    MassUnits = Math.Abs(Convert.ToDouble(rawNum)) / Convert.ToDouble(txBox.Tag);
+                                    break;
+                            }
+
+                            if (Regex.IsMatch(txBox.Text, RegEx_Decimal))
+                            {
+                                FillMetricToEnglish_Mass(txBox.Name);
+                                FormatEntryTextbox(txBox);
+                            }
+
                         }
+                        else
+                        {
+                            txBox.Text = txBox.Text.Substring(0, txBox.Text.Length - 1);
+                            txBox.SelectionStart = txBox.Text.Length;
+                            txBox.SelectionLength = 0;
+                        }
+
+                        OriginalEntry = false;
                     }
                 }
             }
@@ -327,6 +376,7 @@ namespace RWD.Toolbox.Conversion.WinForm
                 OriginalEntry = false;
                 FillMetricToEnglish_Mass("ALL");
             }
+
         }
 
         /// <summary>
@@ -364,11 +414,6 @@ namespace RWD.Toolbox.Conversion.WinForm
                 MassUnits = 0;
                 FillEnglishToMetric_Mass("ALL");
             }
-            finally
-            {
-                OriginalEntry = false;
-            }
-
         }
 
         /// <summary>
@@ -406,10 +451,6 @@ namespace RWD.Toolbox.Conversion.WinForm
                 MassUnits = 0;
                 FillMetricToEnglish_Mass("ALL");
             }
-            finally
-            {
-                OriginalEntry = false;
-            }
         }
 
         #endregion
@@ -420,28 +461,47 @@ namespace RWD.Toolbox.Conversion.WinForm
         private void English_Vol_TextChanged(object sender, EventArgs e)
         {
             TextBox txBox = sender as TextBox;
+            if (txBox.Text.StartsWith("."))
+            {
+                txBox.Text = "0.";
+                txBox.SelectionStart = txBox.Text.Length;
+                txBox.SelectionLength = 0;
+            }
+            var rawNum = txBox.Text.Replace(",", "");
+            if (rawNum.EndsWith("."))
+                rawNum += "0";
+
             try
             {
                 if (!OriginalEntry)
                 {
+                    OriginalEntry = true;
                     if (string.IsNullOrEmpty(txBox.Text))
                     {
                         VolUnits = 0;
                         FillEnglishToMetric_Vol("ALL");
+                        OriginalEntry = false;
                     }
                     else
                     {
-                        var rawNum = txBox.Text.Replace(",", "");
-
-                        VolUnits = Math.Abs(Convert.ToDouble(rawNum)) / Convert.ToDouble(txBox.Tag);
-
                         if (Regex.IsMatch(rawNum, RegEx_Decimal))
                         {
-                            OriginalEntry = true;
-                            FillEnglishToMetric_Vol(txBox.Name);
-                            FormatEntryTextbox(txBox);
+                            VolUnits = Math.Abs(Convert.ToDouble(rawNum)) / Convert.ToDouble(txBox.Tag);
+
+                            if (Regex.IsMatch(txBox.Text, RegEx_Decimal))
+                            {
+                                FillEnglishToMetric_Vol(txBox.Name);
+                                FormatEntryTextbox(txBox);
+                            }
+                        }
+                        else
+                        {
+                            txBox.Text = txBox.Text.Substring(0, txBox.Text.Length - 1);
+                            txBox.SelectionStart = txBox.Text.Length;
+                            txBox.SelectionLength = 0;
                         }
 
+                        OriginalEntry = false;
                     }
                 }
             }
@@ -459,29 +519,49 @@ namespace RWD.Toolbox.Conversion.WinForm
         private void Metric_Vol_TextChanged(object sender, EventArgs e)
         {
             TextBox txBox = sender as TextBox;
+            if (txBox.Text.StartsWith("."))
+            {
+                txBox.Text = "0.";
+                txBox.SelectionStart = txBox.Text.Length;
+                txBox.SelectionLength = 0;
+            }
+            var rawNum = txBox.Text.Replace(",", "");
+            if (rawNum.EndsWith("."))
+                rawNum += "0"; 
 
             try
             {
                 if (!OriginalEntry)
                 {
+                    OriginalEntry = true;
                     if (string.IsNullOrEmpty(txBox.Text))
                     {
                         VolUnits = 0;
                         FillMetricToEnglish_Vol("ALL");
+                        OriginalEntry = false;
                     }
                     else
                     {
-                        var rawNum = txBox.Text.Replace(",", "");
-
-                        VolUnits = Math.Abs(Convert.ToDouble(rawNum)) * Convert.ToDouble(txBox.Tag);
-
                         if (Regex.IsMatch(rawNum, RegEx_Decimal))
                         {
-                            OriginalEntry = true;
-                            FillMetricToEnglish_Vol(txBox.Name);
-                            FormatEntryTextbox(txBox);
+                            VolUnits = Math.Abs(Convert.ToDouble(rawNum)) * Convert.ToDouble(txBox.Tag);
+
+                            if (Regex.IsMatch(txBox.Text, RegEx_Decimal))
+                            {
+                                FillMetricToEnglish_Vol(txBox.Name);
+                                FormatEntryTextbox(txBox);
+                            }
                         }
+                        else
+                        {
+                            txBox.Text = txBox.Text.Substring(0, txBox.Text.Length - 1);
+                            txBox.SelectionStart = txBox.Text.Length;
+                            txBox.SelectionLength = 0;
+                        }
+
+                        OriginalEntry = false;
                     }
+
                 }
             }
             catch (Exception ex)
@@ -534,10 +614,6 @@ namespace RWD.Toolbox.Conversion.WinForm
                 VolUnits = 0;
                 FillEnglishToMetric_Vol("ALL");
             }
-            finally
-            {
-                OriginalEntry = false;
-            }
 
         }
 
@@ -581,10 +657,6 @@ namespace RWD.Toolbox.Conversion.WinForm
                 VolUnits = 0;
                 FillMetricToEnglish_Vol("ALL");
             }
-            finally
-            {
-                OriginalEntry = false;
-            }
         }
 
         #endregion
@@ -595,6 +667,15 @@ namespace RWD.Toolbox.Conversion.WinForm
         private void Temp_TextChanged(object sender, EventArgs e)
         {
             TextBox txBox = sender as TextBox;
+            if (txBox.Text.StartsWith("."))
+            {
+                txBox.Text = "0.";
+                txBox.SelectionStart = txBox.Text.Length;
+                txBox.SelectionLength = 0;
+            }
+            var rawNum = txBox.Text.Replace(",", "");
+            if (rawNum.EndsWith("."))
+                rawNum += "0";
 
             try
             {
@@ -607,16 +688,40 @@ namespace RWD.Toolbox.Conversion.WinForm
                     }
                     else
                     {
-                        if (txBox.Name == "txtFahrenheit")
+                        if (Regex.IsMatch(rawNum, RegEx_Decimal))
                         {
-                            OriginalEntry = true;
-                            txtCelcius.Text = Temperature.ConvertFahrenheitToCelcius(Convert.ToDouble(txtFahrenheit.Text)).ToString();
+                            if (txBox.Name == "txtFahrenheit")
+                            {
+                                OriginalEntry = true;
+                                txtCelcius.Text = Temperature.ConvertFahrenheitToCelcius(Convert.ToDouble(rawNum)).Value.ToString("###,##0.###");
+                            }
+                            else
+                            {
+                                OriginalEntry = true;
+                                txtFahrenheit.Text = Temperature.ConvertCelciusToFahrenheit(Convert.ToDouble(rawNum)).Value.ToString("###,##0.###");
+                            }
+
+                            if (Regex.IsMatch(txBox.Text, RegEx_Decimal))
+                                FormatEntryTextbox(txBox);
                         }
                         else
                         {
-                            OriginalEntry = true;
-                            txtFahrenheit.Text = Temperature.ConvertCelciusToFahrenheit(Convert.ToDouble(txtCelcius.Text)).ToString();
+                            if (txBox.Text == "-")
+                            {
+                                if (txBox.Name == "txtFahrenheit")
+                                    txtCelcius.Text = "";
+                                else
+                                    txtFahrenheit.Text = "";
+                            }
+                            else
+                            {
+                                txBox.Text = txBox.Text.Substring(0, txBox.Text.Length - 1);
+                                txBox.SelectionStart = txBox.Text.Length;
+                                txBox.SelectionLength = 0;
+                            }
                         }
+
+
                     }
                 }
             }
@@ -639,6 +744,8 @@ namespace RWD.Toolbox.Conversion.WinForm
         private void FormatEntryTextbox(TextBox txBox)
         {
             var rawNum = txBox.Text.Replace(",", "");
+            var placeHolder = rawNum.EndsWith("0") ? '0' : '#';
+            var format = EntryFormat;
 
             double dValue;
             if (double.TryParse(rawNum, out dValue))
@@ -647,14 +754,10 @@ namespace RWD.Toolbox.Conversion.WinForm
                 if (idx >= 0)
                 {
                     var p = rawNum.Length - idx - 1;
-                    var std = EntryFormat.Length - EntryFormat.IndexOf('.') - 1;
-                    if (p > std)
-                    {
-                        EntryFormat = EntryFormat.PadRight(EntryFormat.Length + 1, '#');
-                    }
+                    format += "." + new string(placeHolder, p);
                 }
 
-                txBox.Text = dValue.ToString(EntryFormat);
+                txBox.Text = dValue.ToString(format);
                 txBox.SelectionStart = txBox.Text.Length;
                 txBox.SelectionLength = 0;
             }
