@@ -249,20 +249,21 @@ namespace RWD.Toolbox.Conversion.WinForm
         private void English_Mass_TextChanged(object sender, EventArgs e)
         {
             TextBox txBox = sender as TextBox;
-            if (txBox.Text.StartsWith("."))
-            {
-                txBox.Text = "0.";
-                txBox.SelectionStart = txBox.Text.Length;
-                txBox.SelectionLength = 0;
-            }
-            var rawNum = txBox.Text.Replace(",", "");
-            if (rawNum.EndsWith("."))
-                rawNum += "0";
-
+            
             try
             {
                 if (!OriginalEntry)
                 {
+                    if (txBox.Text.StartsWith("."))
+                    {
+                        txBox.Text = "0.";
+                        txBox.SelectionStart = txBox.Text.Length;
+                        txBox.SelectionLength = 0;
+                    }
+                    var rawNum = txBox.Text.Replace(",", "");
+                    if (rawNum.EndsWith("."))
+                        rawNum += "0";
+
                     OriginalEntry = true;
                     if (string.IsNullOrEmpty(txBox.Text))
                     {
@@ -315,20 +316,22 @@ namespace RWD.Toolbox.Conversion.WinForm
         private void Metric_Mass_TextChanged(object sender, EventArgs e)
         {
             TextBox txBox = sender as TextBox;
-            if (txBox.Text.StartsWith("."))
-            {
-                txBox.Text = "0.";
-                txBox.SelectionStart = txBox.Text.Length;
-                txBox.SelectionLength = 0;
-            }
-            var rawNum = txBox.Text.Replace(",", "");
-            if (rawNum.EndsWith("."))
-                rawNum += "0";
+    
 
             try
             {
                 if (!OriginalEntry)
                 {
+                    if (txBox.Text.StartsWith("."))
+                    {
+                        txBox.Text = "0.";
+                        txBox.SelectionStart = txBox.Text.Length;
+                        txBox.SelectionLength = 0;
+                    }
+                    var rawNum = txBox.Text.Replace(",", "");
+                    if (rawNum.EndsWith("."))
+                        rawNum += "0";
+
                     OriginalEntry = true;
                     if (string.IsNullOrEmpty(txBox.Text))
                     {
@@ -461,20 +464,21 @@ namespace RWD.Toolbox.Conversion.WinForm
         private void English_Vol_TextChanged(object sender, EventArgs e)
         {
             TextBox txBox = sender as TextBox;
-            if (txBox.Text.StartsWith("."))
-            {
-                txBox.Text = "0.";
-                txBox.SelectionStart = txBox.Text.Length;
-                txBox.SelectionLength = 0;
-            }
-            var rawNum = txBox.Text.Replace(",", "");
-            if (rawNum.EndsWith("."))
-                rawNum += "0";
-
+            
             try
             {
                 if (!OriginalEntry)
                 {
+                    if (txBox.Text.StartsWith("."))
+                    {
+                        txBox.Text = "0.";
+                        txBox.SelectionStart = txBox.Text.Length;
+                        txBox.SelectionLength = 0;
+                    }
+                    var rawNum = txBox.Text.Replace(",", "");
+                    if (rawNum.EndsWith("."))
+                        rawNum += "0";
+
                     OriginalEntry = true;
                     if (string.IsNullOrEmpty(txBox.Text))
                     {
@@ -519,20 +523,21 @@ namespace RWD.Toolbox.Conversion.WinForm
         private void Metric_Vol_TextChanged(object sender, EventArgs e)
         {
             TextBox txBox = sender as TextBox;
-            if (txBox.Text.StartsWith("."))
-            {
-                txBox.Text = "0.";
-                txBox.SelectionStart = txBox.Text.Length;
-                txBox.SelectionLength = 0;
-            }
-            var rawNum = txBox.Text.Replace(",", "");
-            if (rawNum.EndsWith("."))
-                rawNum += "0"; 
-
+            
             try
             {
                 if (!OriginalEntry)
                 {
+                    if (txBox.Text.StartsWith("."))
+                    {
+                        txBox.Text = "0.";
+                        txBox.SelectionStart = txBox.Text.Length;
+                        txBox.SelectionLength = 0;
+                    }
+                    var rawNum = txBox.Text.Replace(",", "");
+                    if (rawNum.EndsWith("."))
+                        rawNum += "0";
+
                     OriginalEntry = true;
                     if (string.IsNullOrEmpty(txBox.Text))
                     {

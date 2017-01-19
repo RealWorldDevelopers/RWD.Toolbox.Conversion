@@ -27,7 +27,7 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.2.0")]
-[assembly: AssemblyFileVersion("1.0.117.0")]
+[assembly: AssemblyFileVersion("1.0.120.0")]
 [assembly: InternalsVisibleTo("RWD.Toolbox.Conversion.Tests")]
 [assembly: InternalsVisibleTo("RWD.Toolbox.Conversion.Explorables")]
 [assembly: InternalsVisibleTo("RWD.Toolbox.Conversion.Tests1")]

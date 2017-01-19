@@ -2,14 +2,14 @@
 <HelpTOC>
 
   <HelpTOCNode Title="Welcome to the Conversion Library" Url="html/060b2fb0-ffa4-49c9-9d84-2f4fcfcacf0a.htm" />
-  <HelpTOCNode Id="e0a01eba-7765-4bcd-a435-ca70de6ff88d" Title="Version History" Url="html/18cce227-e992-4b48-a6c6-2e4545980236.htm">
+  <HelpTOCNode Id="faf42a8f-5078-45ba-b0bf-d0d656ab095f" Title="Version History" Url="html/18cce227-e992-4b48-a6c6-2e4545980236.htm">
     <HelpTOCNode Title="Version 1.0.2.0" Url="html/a9e0109b-70a9-4e7f-8a13-2f5794d0066a.htm" />
     <HelpTOCNode Title="Version 1.0.1.0" Url="html/004077d2-0b6b-465d-8701-185ccd77aa4a.htm" />
     <HelpTOCNode Title="Version 1.0.0.0" Url="html/ea48f03c-cfba-4dc0-b9ff-4fb6b48d910e.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="45516450-ce06-40b3-8561-6bacb4192e52" Title="RWD.Toolbox.Conversion" Url="html/e80631de-7e32-b078-16f1-844335fda45d.htm">
-    <HelpTOCNode Id="15bf6a46-79e9-4d5d-8118-1ee3e5adef74" Title="Mass Class" Url="html/430f9eda-def5-e7c7-0903-4bc73a0847c0.htm">
-      <HelpTOCNode Id="80bf67f2-e974-4cee-8045-0c98b2dc3b5c" Title="Mass Methods" Url="html/3f103298-167f-77d4-4d9f-f27cc769113e.htm">
+  <HelpTOCNode Id="40f8dd58-d18a-4628-a4f6-f6901a6818e1" Title="RWD.Toolbox.Conversion" Url="html/e80631de-7e32-b078-16f1-844335fda45d.htm">
+    <HelpTOCNode Id="52c7a4ba-fcdc-4907-99d4-82fa18fa6e42" Title="Mass Class" Url="html/430f9eda-def5-e7c7-0903-4bc73a0847c0.htm">
+      <HelpTOCNode Id="d60ede77-b476-4623-bffb-18c2e60acdf4" Title="Mass Methods" Url="html/3f103298-167f-77d4-4d9f-f27cc769113e.htm">
         <HelpTOCNode Title="GramsToKiloGrams Method " Url="html/3e700ad9-1ec1-dcad-2f3d-5f37dbfac284.htm" />
         <HelpTOCNode Title="GramsToMilliGrams Method " Url="html/914ee99f-c93f-e930-3ef9-902cf892e638.htm" />
         <HelpTOCNode Title="GramsToOunces Method " Url="html/a8059908-a998-2f5c-6af7-560fa89adc15.htm" />
@@ -28,8 +28,8 @@
         <HelpTOCNode Title="TonsToPounds Method " Url="html/02c8a1f2-97fb-79a6-5cc9-bafbebbbf2d8.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="cb312bea-d11c-4243-82a3-a141a675e6de" Title="Measurement Class" Url="html/96640df9-1273-7f28-57cb-5d3da82b06a5.htm">
-      <HelpTOCNode Id="70fe937a-7d13-4b63-bd39-2cdae7581aa4" Title="Measurement Methods" Url="html/3fb8f441-54c5-4b49-211a-a8477d199ad7.htm">
+    <HelpTOCNode Id="40c904ab-e380-488c-9715-bcd8387fe57e" Title="Measurement Class" Url="html/96640df9-1273-7f28-57cb-5d3da82b06a5.htm">
+      <HelpTOCNode Id="e1b80a6d-e63d-4c96-929d-b7466742321f" Title="Measurement Methods" Url="html/3fb8f441-54c5-4b49-211a-a8477d199ad7.htm">
         <HelpTOCNode Title="ConvertCelciusToFahrenheit Method " Url="html/db3cfb5f-79fb-c07d-6f41-16717aa245ff.htm" />
         <HelpTOCNode Title="ConvertFahrenheitToCelcius Method " Url="html/545f0c5f-de54-7bae-e052-1a69466dacff.htm" />
         <HelpTOCNode Title="CupsToGallons Method " Url="html/9c22c236-0386-2b1f-5cd2-79480bcfabe1.htm" />
@@ -90,14 +90,14 @@
         <HelpTOCNode Title="TonsToPounds Method " Url="html/23c9aff3-63cc-4cdc-da91-4e2f552b8adc.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f8e7d291-9c42-409a-bcab-1dadbdf1205c" Title="Temperature Class" Url="html/6249401c-8c5a-2267-d350-006eaf6fc9c8.htm">
-      <HelpTOCNode Id="f96ca60c-d259-4255-9118-55378302ea3b" Title="Temperature Methods" Url="html/2b2a31e9-e0af-855c-e684-70d35e0b2bbf.htm">
+    <HelpTOCNode Id="a627b060-74cf-43c9-be35-b93a510e6738" Title="Temperature Class" Url="html/6249401c-8c5a-2267-d350-006eaf6fc9c8.htm">
+      <HelpTOCNode Id="3e2e9172-7c82-43e8-b2e1-ab9171b7e304" Title="Temperature Methods" Url="html/2b2a31e9-e0af-855c-e684-70d35e0b2bbf.htm">
         <HelpTOCNode Title="ConvertCelciusToFahrenheit Method " Url="html/0f05e8cd-2a8d-5621-1b7d-37449ec03eea.htm" />
         <HelpTOCNode Title="ConvertFahrenheitToCelcius Method " Url="html/ce4ef38d-fc3d-2d92-033b-1d44872e3014.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="90bfb20b-7cbe-41f2-adb8-78c476660afa" Title="Volume Class" Url="html/ed57422f-464e-001e-87e6-6e8a9af9f0bd.htm">
-      <HelpTOCNode Id="418ebe2d-ad0e-45e7-b3b1-a823836d4589" Title="Volume Methods" Url="html/8c13b031-306e-97e9-908a-abc96334b3f2.htm">
+    <HelpTOCNode Id="20965fa4-e611-49d5-ab49-dd6389d60780" Title="Volume Class" Url="html/ed57422f-464e-001e-87e6-6e8a9af9f0bd.htm">
+      <HelpTOCNode Id="29cc7fec-6be8-4a01-84bf-6268ce6bf33b" Title="Volume Methods" Url="html/8c13b031-306e-97e9-908a-abc96334b3f2.htm">
         <HelpTOCNode Title="CupsToGallons Method " Url="html/46133531-b4bc-e30f-1d95-b81dd49714cf.htm" />
         <HelpTOCNode Title="CupsToOunces Method " Url="html/e67aaf60-48e3-afde-d4f8-094049989507.htm" />
         <HelpTOCNode Title="CupsToPints Method " Url="html/782c30f6-f4c3-bf03-9158-ba4c9427f843.htm" />
