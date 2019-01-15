@@ -15,7 +15,7 @@ A .NET Core Library to assist with converting units of measure.
 
 ### Quick Start Notes
 * #### v1.0.0.0  
-	* Intial Release
+	* Initial Release
 	* .Net Framework
 * #### v2.0.0.0  
 	* Breaking Release

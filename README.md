@@ -1,10 +1,20 @@
-# RWD.Toolbox.Conversion
+RWD.Toolbox.Conversion
+================
+A .NET Core Library to assist with converting units of measure.
 
-A .NET Portable Class Library for Coverting Mass, Volume and Temperature Measurements from US to Metric or Vise Versa.
+[Real World Developers](https://www.realworlddevelopers.com)
+-----------------------
 
-For detailed documentation download Conversion.Measurement.chm from: <br>
-https://github.com/RealWorldDevelopers/RWD.Toolbox.Conversion/tree/master/RWD.Toolbox.Conversion.Documentation/Help
+[Documentation](https://realworlddevelopers.github.io/RWD.Toolbox.Conversion/)
+-----------------------
 
-For the Nuget Package go here: <br>
-https://www.nuget.org/packages/RWD.Toolbox.Conversion/
+[Nuget Package](https://www.nuget.org/packages/RWD.Toolbox.Conversion/)
+---------------
 
+### Quick Start Notes
+* #### v1.0.0.0  
+	* Initial Release
+	* .Net Framework
+* #### v2.0.0.0  
+	* Breaking Release
+	* .Net Core
