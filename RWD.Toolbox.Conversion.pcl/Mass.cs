@@ -1,4 +1,6 @@
 ﻿
+// Copyright(C) 2016  Real World Developers (www.realworlddevelopers.com)  
+
 using System;
 
 namespace RWD.Toolbox.Conversion
@@ -12,7 +14,7 @@ namespace RWD.Toolbox.Conversion
         /// KiloGrams To MilliGrams 
         /// </summary>
         /// <param name="kg">KiloGrams as <see cref="Nullable{Double}"/></param>
-        /// <returns>MiliGrams as <see cref="Nullable{Double}"/></returns>
+        /// <returns>MiiliGrams as <see cref="Nullable{Double}"/></returns>
         /// <remarks>Same as GramsToMilliGrams(KiloGramsToGrams(Kg))</remarks>
         public static double? KiloGramsToMilliGrams(double? kg)
         {

@@ -55,7 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RWD.Toolbox.Conversion\RWD.Toolbox.Conversion.csproj">
-      <Project>{bf2a8dbf-d438-4358-9b28-044c7a539972}</Project>
+      <Project>{978d2c11-247a-48cf-9b0e-f245e6ec79b4}</Project>
       <Name>RWD.Toolbox.Conversion</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,4 +1,6 @@
 ﻿
+// Copyright(C) 2016  Real World Developers (www.realworlddevelopers.com)  
+
 using System;
 
 namespace RWD.Toolbox.Conversion
@@ -15,7 +17,7 @@ namespace RWD.Toolbox.Conversion
         /// <returns>Quarts as <see cref="Nullable{Double}"/></returns>
         /// <remarks>1 US gallon = 4 US quarts</remarks>
         public static double? GallonsToQuarts(double? gal)
-        { 
+        {
             double? quarts = null;
             if (gal != null)
             {
