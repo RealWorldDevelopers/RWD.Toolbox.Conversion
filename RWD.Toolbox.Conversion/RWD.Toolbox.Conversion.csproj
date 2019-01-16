@@ -3,13 +3,19 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <Version>2.0.0</Version>
+    <Description>A Free .NET Core Class Library for Coverting Mass, Volume, Distance and Temperature Measurements from US to Metric or Vise Versa.</Description>
+    <Authors>RealWorldDevelopers</Authors>
+    <Copyright>RealWorldDevelopers 2018</Copyright>
+    <PackageLicenseUrl>http://www.realworlddevelopers.com/legal/EULA.html</PackageLicenseUrl>
+    <PackageProjectUrl>http://www.realworlddevelopers.com</PackageProjectUrl>
+    <PackageIconUrl>http://www.realworlddevelopers.com/graphics/rwdevs-nuget.jpg</PackageIconUrl>
+    <RepositoryUrl>https://github.com/RealWorldDevelopers/RWD.Toolbox.Conversion</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags>Unit Conversion Metric RealWorldDevelopers .NET Core</PackageTags>
+    <PackageReleaseNotes>This update is a breaking update.
+1) Switching to .Net Core
+2) Added Distance</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="docfx.console" Version="2.40.7">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
 
 </Project>
