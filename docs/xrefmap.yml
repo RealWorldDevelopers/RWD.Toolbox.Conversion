@@ -1,0 +1,1313 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: RWD.Toolbox.Conversion
+  name: RWD.Toolbox.Conversion
+  href: api/RWD.Toolbox.Conversion.html
+  commentId: N:RWD.Toolbox.Conversion
+  fullName: RWD.Toolbox.Conversion
+  nameWithType: RWD.Toolbox.Conversion
+- uid: RWD.Toolbox.Conversion.Distance
+  name: Distance
+  href: api/RWD.Toolbox.Conversion.Distance.html
+  commentId: T:RWD.Toolbox.Conversion.Distance
+  fullName: RWD.Toolbox.Conversion.Distance
+  nameWithType: Distance
+- uid: RWD.Toolbox.Conversion.Distance.CentimetersToInches(System.Nullable{System.Double})
+  name: CentimetersToInches(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_CentimetersToInches_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.CentimetersToInches(System.Nullable{System.Double})
+  name.vb: CentimetersToInches(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.CentimetersToInches(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.CentimetersToInches(System.Nullable(Of System.Double))
+  nameWithType: Distance.CentimetersToInches(Nullable<Double>)
+  nameWithType.vb: Distance.CentimetersToInches(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.CentimetersToInches*
+  name: CentimetersToInches
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_CentimetersToInches_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.CentimetersToInches
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.CentimetersToInches
+  nameWithType: Distance.CentimetersToInches
+- uid: RWD.Toolbox.Conversion.Distance.FeetToInches(System.Nullable{System.Double})
+  name: FeetToInches(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_FeetToInches_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.FeetToInches(System.Nullable{System.Double})
+  name.vb: FeetToInches(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.FeetToInches(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.FeetToInches(System.Nullable(Of System.Double))
+  nameWithType: Distance.FeetToInches(Nullable<Double>)
+  nameWithType.vb: Distance.FeetToInches(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.FeetToInches*
+  name: FeetToInches
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_FeetToInches_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.FeetToInches
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.FeetToInches
+  nameWithType: Distance.FeetToInches
+- uid: RWD.Toolbox.Conversion.Distance.FeetToMeters(System.Nullable{System.Double})
+  name: FeetToMeters(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_FeetToMeters_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.FeetToMeters(System.Nullable{System.Double})
+  name.vb: FeetToMeters(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.FeetToMeters(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.FeetToMeters(System.Nullable(Of System.Double))
+  nameWithType: Distance.FeetToMeters(Nullable<Double>)
+  nameWithType.vb: Distance.FeetToMeters(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.FeetToMeters*
+  name: FeetToMeters
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_FeetToMeters_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.FeetToMeters
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.FeetToMeters
+  nameWithType: Distance.FeetToMeters
+- uid: RWD.Toolbox.Conversion.Distance.FeetToMiles(System.Nullable{System.Double})
+  name: FeetToMiles(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_FeetToMiles_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.FeetToMiles(System.Nullable{System.Double})
+  name.vb: FeetToMiles(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.FeetToMiles(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.FeetToMiles(System.Nullable(Of System.Double))
+  nameWithType: Distance.FeetToMiles(Nullable<Double>)
+  nameWithType.vb: Distance.FeetToMiles(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.FeetToMiles*
+  name: FeetToMiles
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_FeetToMiles_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.FeetToMiles
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.FeetToMiles
+  nameWithType: Distance.FeetToMiles
+- uid: RWD.Toolbox.Conversion.Distance.InchesToCentimeters(System.Nullable{System.Double})
+  name: InchesToCentimeters(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_InchesToCentimeters_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.InchesToCentimeters(System.Nullable{System.Double})
+  name.vb: InchesToCentimeters(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.InchesToCentimeters(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.InchesToCentimeters(System.Nullable(Of System.Double))
+  nameWithType: Distance.InchesToCentimeters(Nullable<Double>)
+  nameWithType.vb: Distance.InchesToCentimeters(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.InchesToCentimeters*
+  name: InchesToCentimeters
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_InchesToCentimeters_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.InchesToCentimeters
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.InchesToCentimeters
+  nameWithType: Distance.InchesToCentimeters
+- uid: RWD.Toolbox.Conversion.Distance.InchesToFeet(System.Nullable{System.Double})
+  name: InchesToFeet(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_InchesToFeet_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.InchesToFeet(System.Nullable{System.Double})
+  name.vb: InchesToFeet(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.InchesToFeet(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.InchesToFeet(System.Nullable(Of System.Double))
+  nameWithType: Distance.InchesToFeet(Nullable<Double>)
+  nameWithType.vb: Distance.InchesToFeet(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.InchesToFeet*
+  name: InchesToFeet
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_InchesToFeet_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.InchesToFeet
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.InchesToFeet
+  nameWithType: Distance.InchesToFeet
+- uid: RWD.Toolbox.Conversion.Distance.InchesToMillimeters(System.Nullable{System.Double})
+  name: InchesToMillimeters(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_InchesToMillimeters_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.InchesToMillimeters(System.Nullable{System.Double})
+  name.vb: InchesToMillimeters(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.InchesToMillimeters(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.InchesToMillimeters(System.Nullable(Of System.Double))
+  nameWithType: Distance.InchesToMillimeters(Nullable<Double>)
+  nameWithType.vb: Distance.InchesToMillimeters(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.InchesToMillimeters*
+  name: InchesToMillimeters
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_InchesToMillimeters_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.InchesToMillimeters
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.InchesToMillimeters
+  nameWithType: Distance.InchesToMillimeters
+- uid: RWD.Toolbox.Conversion.Distance.KilometersToMeters(System.Nullable{System.Double})
+  name: KilometersToMeters(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_KilometersToMeters_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.KilometersToMeters(System.Nullable{System.Double})
+  name.vb: KilometersToMeters(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.KilometersToMeters(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.KilometersToMeters(System.Nullable(Of System.Double))
+  nameWithType: Distance.KilometersToMeters(Nullable<Double>)
+  nameWithType.vb: Distance.KilometersToMeters(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.KilometersToMeters*
+  name: KilometersToMeters
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_KilometersToMeters_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.KilometersToMeters
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.KilometersToMeters
+  nameWithType: Distance.KilometersToMeters
+- uid: RWD.Toolbox.Conversion.Distance.KilometersToMiles(System.Nullable{System.Double})
+  name: KilometersToMiles(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_KilometersToMiles_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.KilometersToMiles(System.Nullable{System.Double})
+  name.vb: KilometersToMiles(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.KilometersToMiles(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.KilometersToMiles(System.Nullable(Of System.Double))
+  nameWithType: Distance.KilometersToMiles(Nullable<Double>)
+  nameWithType.vb: Distance.KilometersToMiles(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.KilometersToMiles*
+  name: KilometersToMiles
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_KilometersToMiles_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.KilometersToMiles
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.KilometersToMiles
+  nameWithType: Distance.KilometersToMiles
+- uid: RWD.Toolbox.Conversion.Distance.MetersToFeet(System.Nullable{System.Double})
+  name: MetersToFeet(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_MetersToFeet_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.MetersToFeet(System.Nullable{System.Double})
+  name.vb: MetersToFeet(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.MetersToFeet(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.MetersToFeet(System.Nullable(Of System.Double))
+  nameWithType: Distance.MetersToFeet(Nullable<Double>)
+  nameWithType.vb: Distance.MetersToFeet(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.MetersToFeet*
+  name: MetersToFeet
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_MetersToFeet_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.MetersToFeet
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.MetersToFeet
+  nameWithType: Distance.MetersToFeet
+- uid: RWD.Toolbox.Conversion.Distance.MetersToKilometers(System.Nullable{System.Double})
+  name: MetersToKilometers(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_MetersToKilometers_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.MetersToKilometers(System.Nullable{System.Double})
+  name.vb: MetersToKilometers(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.MetersToKilometers(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.MetersToKilometers(System.Nullable(Of System.Double))
+  nameWithType: Distance.MetersToKilometers(Nullable<Double>)
+  nameWithType.vb: Distance.MetersToKilometers(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.MetersToKilometers*
+  name: MetersToKilometers
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_MetersToKilometers_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.MetersToKilometers
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.MetersToKilometers
+  nameWithType: Distance.MetersToKilometers
+- uid: RWD.Toolbox.Conversion.Distance.MetersToYards(System.Nullable{System.Double})
+  name: MetersToYards(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_MetersToYards_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.MetersToYards(System.Nullable{System.Double})
+  name.vb: MetersToYards(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.MetersToYards(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.MetersToYards(System.Nullable(Of System.Double))
+  nameWithType: Distance.MetersToYards(Nullable<Double>)
+  nameWithType.vb: Distance.MetersToYards(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.MetersToYards*
+  name: MetersToYards
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_MetersToYards_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.MetersToYards
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.MetersToYards
+  nameWithType: Distance.MetersToYards
+- uid: RWD.Toolbox.Conversion.Distance.MilesToFeet(System.Nullable{System.Double})
+  name: MilesToFeet(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_MilesToFeet_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.MilesToFeet(System.Nullable{System.Double})
+  name.vb: MilesToFeet(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.MilesToFeet(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.MilesToFeet(System.Nullable(Of System.Double))
+  nameWithType: Distance.MilesToFeet(Nullable<Double>)
+  nameWithType.vb: Distance.MilesToFeet(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.MilesToFeet*
+  name: MilesToFeet
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_MilesToFeet_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.MilesToFeet
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.MilesToFeet
+  nameWithType: Distance.MilesToFeet
+- uid: RWD.Toolbox.Conversion.Distance.MilesToKilometers(System.Nullable{System.Double})
+  name: MilesToKilometers(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_MilesToKilometers_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.MilesToKilometers(System.Nullable{System.Double})
+  name.vb: MilesToKilometers(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.MilesToKilometers(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.MilesToKilometers(System.Nullable(Of System.Double))
+  nameWithType: Distance.MilesToKilometers(Nullable<Double>)
+  nameWithType.vb: Distance.MilesToKilometers(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.MilesToKilometers*
+  name: MilesToKilometers
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_MilesToKilometers_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.MilesToKilometers
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.MilesToKilometers
+  nameWithType: Distance.MilesToKilometers
+- uid: RWD.Toolbox.Conversion.Distance.MilesToYards(System.Nullable{System.Double})
+  name: MilesToYards(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_MilesToYards_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.MilesToYards(System.Nullable{System.Double})
+  name.vb: MilesToYards(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.MilesToYards(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.MilesToYards(System.Nullable(Of System.Double))
+  nameWithType: Distance.MilesToYards(Nullable<Double>)
+  nameWithType.vb: Distance.MilesToYards(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.MilesToYards*
+  name: MilesToYards
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_MilesToYards_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.MilesToYards
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.MilesToYards
+  nameWithType: Distance.MilesToYards
+- uid: RWD.Toolbox.Conversion.Distance.MillimetersToInches(System.Nullable{System.Double})
+  name: MillimetersToInches(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_MillimetersToInches_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.MillimetersToInches(System.Nullable{System.Double})
+  name.vb: MillimetersToInches(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.MillimetersToInches(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.MillimetersToInches(System.Nullable(Of System.Double))
+  nameWithType: Distance.MillimetersToInches(Nullable<Double>)
+  nameWithType.vb: Distance.MillimetersToInches(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.MillimetersToInches*
+  name: MillimetersToInches
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_MillimetersToInches_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.MillimetersToInches
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.MillimetersToInches
+  nameWithType: Distance.MillimetersToInches
+- uid: RWD.Toolbox.Conversion.Distance.YardsToMeters(System.Nullable{System.Double})
+  name: YardsToMeters(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_YardsToMeters_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.YardsToMeters(System.Nullable{System.Double})
+  name.vb: YardsToMeters(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.YardsToMeters(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.YardsToMeters(System.Nullable(Of System.Double))
+  nameWithType: Distance.YardsToMeters(Nullable<Double>)
+  nameWithType.vb: Distance.YardsToMeters(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.YardsToMeters*
+  name: YardsToMeters
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_YardsToMeters_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.YardsToMeters
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.YardsToMeters
+  nameWithType: Distance.YardsToMeters
+- uid: RWD.Toolbox.Conversion.Distance.YardsToMiles(System.Nullable{System.Double})
+  name: YardsToMiles(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_YardsToMiles_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Distance.YardsToMiles(System.Nullable{System.Double})
+  name.vb: YardsToMiles(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Distance.YardsToMiles(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Distance.YardsToMiles(System.Nullable(Of System.Double))
+  nameWithType: Distance.YardsToMiles(Nullable<Double>)
+  nameWithType.vb: Distance.YardsToMiles(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Distance.YardsToMiles*
+  name: YardsToMiles
+  href: api/RWD.Toolbox.Conversion.Distance.html#RWD_Toolbox_Conversion_Distance_YardsToMiles_
+  commentId: Overload:RWD.Toolbox.Conversion.Distance.YardsToMiles
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Distance.YardsToMiles
+  nameWithType: Distance.YardsToMiles
+- uid: RWD.Toolbox.Conversion.Mass
+  name: Mass
+  href: api/RWD.Toolbox.Conversion.Mass.html
+  commentId: T:RWD.Toolbox.Conversion.Mass
+  fullName: RWD.Toolbox.Conversion.Mass
+  nameWithType: Mass
+- uid: RWD.Toolbox.Conversion.Mass.GramsToKiloGrams(System.Nullable{System.Double})
+  name: GramsToKiloGrams(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_GramsToKiloGrams_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.GramsToKiloGrams(System.Nullable{System.Double})
+  name.vb: GramsToKiloGrams(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.GramsToKiloGrams(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.GramsToKiloGrams(System.Nullable(Of System.Double))
+  nameWithType: Mass.GramsToKiloGrams(Nullable<Double>)
+  nameWithType.vb: Mass.GramsToKiloGrams(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.GramsToKiloGrams*
+  name: GramsToKiloGrams
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_GramsToKiloGrams_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.GramsToKiloGrams
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.GramsToKiloGrams
+  nameWithType: Mass.GramsToKiloGrams
+- uid: RWD.Toolbox.Conversion.Mass.GramsToMilliGrams(System.Nullable{System.Double})
+  name: GramsToMilliGrams(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_GramsToMilliGrams_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.GramsToMilliGrams(System.Nullable{System.Double})
+  name.vb: GramsToMilliGrams(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.GramsToMilliGrams(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.GramsToMilliGrams(System.Nullable(Of System.Double))
+  nameWithType: Mass.GramsToMilliGrams(Nullable<Double>)
+  nameWithType.vb: Mass.GramsToMilliGrams(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.GramsToMilliGrams*
+  name: GramsToMilliGrams
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_GramsToMilliGrams_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.GramsToMilliGrams
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.GramsToMilliGrams
+  nameWithType: Mass.GramsToMilliGrams
+- uid: RWD.Toolbox.Conversion.Mass.GramsToOunces(System.Nullable{System.Double})
+  name: GramsToOunces(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_GramsToOunces_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.GramsToOunces(System.Nullable{System.Double})
+  name.vb: GramsToOunces(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.GramsToOunces(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.GramsToOunces(System.Nullable(Of System.Double))
+  nameWithType: Mass.GramsToOunces(Nullable<Double>)
+  nameWithType.vb: Mass.GramsToOunces(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.GramsToOunces*
+  name: GramsToOunces
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_GramsToOunces_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.GramsToOunces
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.GramsToOunces
+  nameWithType: Mass.GramsToOunces
+- uid: RWD.Toolbox.Conversion.Mass.KiloGramsToGrams(System.Nullable{System.Double})
+  name: KiloGramsToGrams(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_KiloGramsToGrams_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.KiloGramsToGrams(System.Nullable{System.Double})
+  name.vb: KiloGramsToGrams(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.KiloGramsToGrams(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.KiloGramsToGrams(System.Nullable(Of System.Double))
+  nameWithType: Mass.KiloGramsToGrams(Nullable<Double>)
+  nameWithType.vb: Mass.KiloGramsToGrams(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.KiloGramsToGrams*
+  name: KiloGramsToGrams
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_KiloGramsToGrams_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.KiloGramsToGrams
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.KiloGramsToGrams
+  nameWithType: Mass.KiloGramsToGrams
+- uid: RWD.Toolbox.Conversion.Mass.KilogramsToMetricTons(System.Nullable{System.Double})
+  name: KilogramsToMetricTons(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_KilogramsToMetricTons_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.KilogramsToMetricTons(System.Nullable{System.Double})
+  name.vb: KilogramsToMetricTons(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.KilogramsToMetricTons(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.KilogramsToMetricTons(System.Nullable(Of System.Double))
+  nameWithType: Mass.KilogramsToMetricTons(Nullable<Double>)
+  nameWithType.vb: Mass.KilogramsToMetricTons(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.KilogramsToMetricTons*
+  name: KilogramsToMetricTons
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_KilogramsToMetricTons_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.KilogramsToMetricTons
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.KilogramsToMetricTons
+  nameWithType: Mass.KilogramsToMetricTons
+- uid: RWD.Toolbox.Conversion.Mass.KiloGramsToMilliGrams(System.Nullable{System.Double})
+  name: KiloGramsToMilliGrams(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_KiloGramsToMilliGrams_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.KiloGramsToMilliGrams(System.Nullable{System.Double})
+  name.vb: KiloGramsToMilliGrams(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.KiloGramsToMilliGrams(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.KiloGramsToMilliGrams(System.Nullable(Of System.Double))
+  nameWithType: Mass.KiloGramsToMilliGrams(Nullable<Double>)
+  nameWithType.vb: Mass.KiloGramsToMilliGrams(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.KiloGramsToMilliGrams*
+  name: KiloGramsToMilliGrams
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_KiloGramsToMilliGrams_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.KiloGramsToMilliGrams
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.KiloGramsToMilliGrams
+  nameWithType: Mass.KiloGramsToMilliGrams
+- uid: RWD.Toolbox.Conversion.Mass.KiloGramsToPounds(System.Nullable{System.Double})
+  name: KiloGramsToPounds(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_KiloGramsToPounds_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.KiloGramsToPounds(System.Nullable{System.Double})
+  name.vb: KiloGramsToPounds(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.KiloGramsToPounds(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.KiloGramsToPounds(System.Nullable(Of System.Double))
+  nameWithType: Mass.KiloGramsToPounds(Nullable<Double>)
+  nameWithType.vb: Mass.KiloGramsToPounds(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.KiloGramsToPounds*
+  name: KiloGramsToPounds
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_KiloGramsToPounds_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.KiloGramsToPounds
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.KiloGramsToPounds
+  nameWithType: Mass.KiloGramsToPounds
+- uid: RWD.Toolbox.Conversion.Mass.MetricTonsToKilograms(System.Nullable{System.Double})
+  name: MetricTonsToKilograms(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_MetricTonsToKilograms_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.MetricTonsToKilograms(System.Nullable{System.Double})
+  name.vb: MetricTonsToKilograms(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.MetricTonsToKilograms(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.MetricTonsToKilograms(System.Nullable(Of System.Double))
+  nameWithType: Mass.MetricTonsToKilograms(Nullable<Double>)
+  nameWithType.vb: Mass.MetricTonsToKilograms(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.MetricTonsToKilograms*
+  name: MetricTonsToKilograms
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_MetricTonsToKilograms_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.MetricTonsToKilograms
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.MetricTonsToKilograms
+  nameWithType: Mass.MetricTonsToKilograms
+- uid: RWD.Toolbox.Conversion.Mass.MilliGramsToGrams(System.Nullable{System.Double})
+  name: MilliGramsToGrams(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_MilliGramsToGrams_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.MilliGramsToGrams(System.Nullable{System.Double})
+  name.vb: MilliGramsToGrams(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.MilliGramsToGrams(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.MilliGramsToGrams(System.Nullable(Of System.Double))
+  nameWithType: Mass.MilliGramsToGrams(Nullable<Double>)
+  nameWithType.vb: Mass.MilliGramsToGrams(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.MilliGramsToGrams*
+  name: MilliGramsToGrams
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_MilliGramsToGrams_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.MilliGramsToGrams
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.MilliGramsToGrams
+  nameWithType: Mass.MilliGramsToGrams
+- uid: RWD.Toolbox.Conversion.Mass.MilligramsToKiloGrams(System.Nullable{System.Double})
+  name: MilligramsToKiloGrams(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_MilligramsToKiloGrams_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.MilligramsToKiloGrams(System.Nullable{System.Double})
+  name.vb: MilligramsToKiloGrams(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.MilligramsToKiloGrams(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.MilligramsToKiloGrams(System.Nullable(Of System.Double))
+  nameWithType: Mass.MilligramsToKiloGrams(Nullable<Double>)
+  nameWithType.vb: Mass.MilligramsToKiloGrams(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.MilligramsToKiloGrams*
+  name: MilligramsToKiloGrams
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_MilligramsToKiloGrams_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.MilligramsToKiloGrams
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.MilligramsToKiloGrams
+  nameWithType: Mass.MilligramsToKiloGrams
+- uid: RWD.Toolbox.Conversion.Mass.OuncesToGrams(System.Nullable{System.Double})
+  name: OuncesToGrams(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_OuncesToGrams_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.OuncesToGrams(System.Nullable{System.Double})
+  name.vb: OuncesToGrams(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.OuncesToGrams(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.OuncesToGrams(System.Nullable(Of System.Double))
+  nameWithType: Mass.OuncesToGrams(Nullable<Double>)
+  nameWithType.vb: Mass.OuncesToGrams(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.OuncesToGrams*
+  name: OuncesToGrams
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_OuncesToGrams_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.OuncesToGrams
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.OuncesToGrams
+  nameWithType: Mass.OuncesToGrams
+- uid: RWD.Toolbox.Conversion.Mass.OuncesToPounds(System.Nullable{System.Double})
+  name: OuncesToPounds(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_OuncesToPounds_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.OuncesToPounds(System.Nullable{System.Double})
+  name.vb: OuncesToPounds(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.OuncesToPounds(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.OuncesToPounds(System.Nullable(Of System.Double))
+  nameWithType: Mass.OuncesToPounds(Nullable<Double>)
+  nameWithType.vb: Mass.OuncesToPounds(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.OuncesToPounds*
+  name: OuncesToPounds
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_OuncesToPounds_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.OuncesToPounds
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.OuncesToPounds
+  nameWithType: Mass.OuncesToPounds
+- uid: RWD.Toolbox.Conversion.Mass.PoundsToKiloGrams(System.Nullable{System.Double})
+  name: PoundsToKiloGrams(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_PoundsToKiloGrams_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.PoundsToKiloGrams(System.Nullable{System.Double})
+  name.vb: PoundsToKiloGrams(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.PoundsToKiloGrams(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.PoundsToKiloGrams(System.Nullable(Of System.Double))
+  nameWithType: Mass.PoundsToKiloGrams(Nullable<Double>)
+  nameWithType.vb: Mass.PoundsToKiloGrams(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.PoundsToKiloGrams*
+  name: PoundsToKiloGrams
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_PoundsToKiloGrams_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.PoundsToKiloGrams
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.PoundsToKiloGrams
+  nameWithType: Mass.PoundsToKiloGrams
+- uid: RWD.Toolbox.Conversion.Mass.PoundsToOunces(System.Nullable{System.Double})
+  name: PoundsToOunces(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_PoundsToOunces_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.PoundsToOunces(System.Nullable{System.Double})
+  name.vb: PoundsToOunces(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.PoundsToOunces(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.PoundsToOunces(System.Nullable(Of System.Double))
+  nameWithType: Mass.PoundsToOunces(Nullable<Double>)
+  nameWithType.vb: Mass.PoundsToOunces(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.PoundsToOunces*
+  name: PoundsToOunces
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_PoundsToOunces_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.PoundsToOunces
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.PoundsToOunces
+  nameWithType: Mass.PoundsToOunces
+- uid: RWD.Toolbox.Conversion.Mass.PoundsToTons(System.Nullable{System.Double})
+  name: PoundsToTons(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_PoundsToTons_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.PoundsToTons(System.Nullable{System.Double})
+  name.vb: PoundsToTons(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.PoundsToTons(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.PoundsToTons(System.Nullable(Of System.Double))
+  nameWithType: Mass.PoundsToTons(Nullable<Double>)
+  nameWithType.vb: Mass.PoundsToTons(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.PoundsToTons*
+  name: PoundsToTons
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_PoundsToTons_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.PoundsToTons
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.PoundsToTons
+  nameWithType: Mass.PoundsToTons
+- uid: RWD.Toolbox.Conversion.Mass.TonsToPounds(System.Nullable{System.Double})
+  name: TonsToPounds(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_TonsToPounds_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Mass.TonsToPounds(System.Nullable{System.Double})
+  name.vb: TonsToPounds(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Mass.TonsToPounds(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Mass.TonsToPounds(System.Nullable(Of System.Double))
+  nameWithType: Mass.TonsToPounds(Nullable<Double>)
+  nameWithType.vb: Mass.TonsToPounds(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Mass.TonsToPounds*
+  name: TonsToPounds
+  href: api/RWD.Toolbox.Conversion.Mass.html#RWD_Toolbox_Conversion_Mass_TonsToPounds_
+  commentId: Overload:RWD.Toolbox.Conversion.Mass.TonsToPounds
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Mass.TonsToPounds
+  nameWithType: Mass.TonsToPounds
+- uid: RWD.Toolbox.Conversion.Temperature
+  name: Temperature
+  href: api/RWD.Toolbox.Conversion.Temperature.html
+  commentId: T:RWD.Toolbox.Conversion.Temperature
+  fullName: RWD.Toolbox.Conversion.Temperature
+  nameWithType: Temperature
+- uid: RWD.Toolbox.Conversion.Temperature.ConvertCelsiusToFahrenheit(System.Nullable{System.Double})
+  name: ConvertCelsiusToFahrenheit(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Temperature.html#RWD_Toolbox_Conversion_Temperature_ConvertCelsiusToFahrenheit_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Temperature.ConvertCelsiusToFahrenheit(System.Nullable{System.Double})
+  name.vb: ConvertCelsiusToFahrenheit(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Temperature.ConvertCelsiusToFahrenheit(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Temperature.ConvertCelsiusToFahrenheit(System.Nullable(Of System.Double))
+  nameWithType: Temperature.ConvertCelsiusToFahrenheit(Nullable<Double>)
+  nameWithType.vb: Temperature.ConvertCelsiusToFahrenheit(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Temperature.ConvertCelsiusToFahrenheit*
+  name: ConvertCelsiusToFahrenheit
+  href: api/RWD.Toolbox.Conversion.Temperature.html#RWD_Toolbox_Conversion_Temperature_ConvertCelsiusToFahrenheit_
+  commentId: Overload:RWD.Toolbox.Conversion.Temperature.ConvertCelsiusToFahrenheit
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Temperature.ConvertCelsiusToFahrenheit
+  nameWithType: Temperature.ConvertCelsiusToFahrenheit
+- uid: RWD.Toolbox.Conversion.Temperature.ConvertCelsiusToKelvin(System.Nullable{System.Double})
+  name: ConvertCelsiusToKelvin(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Temperature.html#RWD_Toolbox_Conversion_Temperature_ConvertCelsiusToKelvin_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Temperature.ConvertCelsiusToKelvin(System.Nullable{System.Double})
+  name.vb: ConvertCelsiusToKelvin(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Temperature.ConvertCelsiusToKelvin(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Temperature.ConvertCelsiusToKelvin(System.Nullable(Of System.Double))
+  nameWithType: Temperature.ConvertCelsiusToKelvin(Nullable<Double>)
+  nameWithType.vb: Temperature.ConvertCelsiusToKelvin(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Temperature.ConvertCelsiusToKelvin*
+  name: ConvertCelsiusToKelvin
+  href: api/RWD.Toolbox.Conversion.Temperature.html#RWD_Toolbox_Conversion_Temperature_ConvertCelsiusToKelvin_
+  commentId: Overload:RWD.Toolbox.Conversion.Temperature.ConvertCelsiusToKelvin
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Temperature.ConvertCelsiusToKelvin
+  nameWithType: Temperature.ConvertCelsiusToKelvin
+- uid: RWD.Toolbox.Conversion.Temperature.ConvertFahrenheitToCelsius(System.Nullable{System.Double})
+  name: ConvertFahrenheitToCelsius(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Temperature.html#RWD_Toolbox_Conversion_Temperature_ConvertFahrenheitToCelsius_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Temperature.ConvertFahrenheitToCelsius(System.Nullable{System.Double})
+  name.vb: ConvertFahrenheitToCelsius(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Temperature.ConvertFahrenheitToCelsius(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Temperature.ConvertFahrenheitToCelsius(System.Nullable(Of System.Double))
+  nameWithType: Temperature.ConvertFahrenheitToCelsius(Nullable<Double>)
+  nameWithType.vb: Temperature.ConvertFahrenheitToCelsius(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Temperature.ConvertFahrenheitToCelsius*
+  name: ConvertFahrenheitToCelsius
+  href: api/RWD.Toolbox.Conversion.Temperature.html#RWD_Toolbox_Conversion_Temperature_ConvertFahrenheitToCelsius_
+  commentId: Overload:RWD.Toolbox.Conversion.Temperature.ConvertFahrenheitToCelsius
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Temperature.ConvertFahrenheitToCelsius
+  nameWithType: Temperature.ConvertFahrenheitToCelsius
+- uid: RWD.Toolbox.Conversion.Temperature.ConvertFahrenheitToKelvin(System.Nullable{System.Double})
+  name: ConvertFahrenheitToKelvin(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Temperature.html#RWD_Toolbox_Conversion_Temperature_ConvertFahrenheitToKelvin_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Temperature.ConvertFahrenheitToKelvin(System.Nullable{System.Double})
+  name.vb: ConvertFahrenheitToKelvin(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Temperature.ConvertFahrenheitToKelvin(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Temperature.ConvertFahrenheitToKelvin(System.Nullable(Of System.Double))
+  nameWithType: Temperature.ConvertFahrenheitToKelvin(Nullable<Double>)
+  nameWithType.vb: Temperature.ConvertFahrenheitToKelvin(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Temperature.ConvertFahrenheitToKelvin*
+  name: ConvertFahrenheitToKelvin
+  href: api/RWD.Toolbox.Conversion.Temperature.html#RWD_Toolbox_Conversion_Temperature_ConvertFahrenheitToKelvin_
+  commentId: Overload:RWD.Toolbox.Conversion.Temperature.ConvertFahrenheitToKelvin
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Temperature.ConvertFahrenheitToKelvin
+  nameWithType: Temperature.ConvertFahrenheitToKelvin
+- uid: RWD.Toolbox.Conversion.Temperature.ConvertKelvinToCelsius(System.Nullable{System.Double})
+  name: ConvertKelvinToCelsius(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Temperature.html#RWD_Toolbox_Conversion_Temperature_ConvertKelvinToCelsius_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Temperature.ConvertKelvinToCelsius(System.Nullable{System.Double})
+  name.vb: ConvertKelvinToCelsius(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Temperature.ConvertKelvinToCelsius(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Temperature.ConvertKelvinToCelsius(System.Nullable(Of System.Double))
+  nameWithType: Temperature.ConvertKelvinToCelsius(Nullable<Double>)
+  nameWithType.vb: Temperature.ConvertKelvinToCelsius(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Temperature.ConvertKelvinToCelsius*
+  name: ConvertKelvinToCelsius
+  href: api/RWD.Toolbox.Conversion.Temperature.html#RWD_Toolbox_Conversion_Temperature_ConvertKelvinToCelsius_
+  commentId: Overload:RWD.Toolbox.Conversion.Temperature.ConvertKelvinToCelsius
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Temperature.ConvertKelvinToCelsius
+  nameWithType: Temperature.ConvertKelvinToCelsius
+- uid: RWD.Toolbox.Conversion.Temperature.ConvertKelvinToFahrenheit(System.Nullable{System.Double})
+  name: ConvertKelvinToFahrenheit(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Temperature.html#RWD_Toolbox_Conversion_Temperature_ConvertKelvinToFahrenheit_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Temperature.ConvertKelvinToFahrenheit(System.Nullable{System.Double})
+  name.vb: ConvertKelvinToFahrenheit(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Temperature.ConvertKelvinToFahrenheit(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Temperature.ConvertKelvinToFahrenheit(System.Nullable(Of System.Double))
+  nameWithType: Temperature.ConvertKelvinToFahrenheit(Nullable<Double>)
+  nameWithType.vb: Temperature.ConvertKelvinToFahrenheit(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Temperature.ConvertKelvinToFahrenheit*
+  name: ConvertKelvinToFahrenheit
+  href: api/RWD.Toolbox.Conversion.Temperature.html#RWD_Toolbox_Conversion_Temperature_ConvertKelvinToFahrenheit_
+  commentId: Overload:RWD.Toolbox.Conversion.Temperature.ConvertKelvinToFahrenheit
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Temperature.ConvertKelvinToFahrenheit
+  nameWithType: Temperature.ConvertKelvinToFahrenheit
+- uid: RWD.Toolbox.Conversion.Volume
+  name: Volume
+  href: api/RWD.Toolbox.Conversion.Volume.html
+  commentId: T:RWD.Toolbox.Conversion.Volume
+  fullName: RWD.Toolbox.Conversion.Volume
+  nameWithType: Volume
+- uid: RWD.Toolbox.Conversion.Volume.CupsToGallons(System.Nullable{System.Double})
+  name: CupsToGallons(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_CupsToGallons_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.CupsToGallons(System.Nullable{System.Double})
+  name.vb: CupsToGallons(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.CupsToGallons(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.CupsToGallons(System.Nullable(Of System.Double))
+  nameWithType: Volume.CupsToGallons(Nullable<Double>)
+  nameWithType.vb: Volume.CupsToGallons(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.CupsToGallons*
+  name: CupsToGallons
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_CupsToGallons_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.CupsToGallons
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.CupsToGallons
+  nameWithType: Volume.CupsToGallons
+- uid: RWD.Toolbox.Conversion.Volume.CupsToOunces(System.Nullable{System.Double})
+  name: CupsToOunces(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_CupsToOunces_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.CupsToOunces(System.Nullable{System.Double})
+  name.vb: CupsToOunces(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.CupsToOunces(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.CupsToOunces(System.Nullable(Of System.Double))
+  nameWithType: Volume.CupsToOunces(Nullable<Double>)
+  nameWithType.vb: Volume.CupsToOunces(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.CupsToOunces*
+  name: CupsToOunces
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_CupsToOunces_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.CupsToOunces
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.CupsToOunces
+  nameWithType: Volume.CupsToOunces
+- uid: RWD.Toolbox.Conversion.Volume.CupsToPints(System.Nullable{System.Double})
+  name: CupsToPints(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_CupsToPints_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.CupsToPints(System.Nullable{System.Double})
+  name.vb: CupsToPints(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.CupsToPints(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.CupsToPints(System.Nullable(Of System.Double))
+  nameWithType: Volume.CupsToPints(Nullable<Double>)
+  nameWithType.vb: Volume.CupsToPints(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.CupsToPints*
+  name: CupsToPints
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_CupsToPints_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.CupsToPints
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.CupsToPints
+  nameWithType: Volume.CupsToPints
+- uid: RWD.Toolbox.Conversion.Volume.CupsToQuarts(System.Nullable{System.Double})
+  name: CupsToQuarts(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_CupsToQuarts_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.CupsToQuarts(System.Nullable{System.Double})
+  name.vb: CupsToQuarts(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.CupsToQuarts(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.CupsToQuarts(System.Nullable(Of System.Double))
+  nameWithType: Volume.CupsToQuarts(Nullable<Double>)
+  nameWithType.vb: Volume.CupsToQuarts(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.CupsToQuarts*
+  name: CupsToQuarts
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_CupsToQuarts_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.CupsToQuarts
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.CupsToQuarts
+  nameWithType: Volume.CupsToQuarts
+- uid: RWD.Toolbox.Conversion.Volume.GallonsToCups(System.Nullable{System.Double})
+  name: GallonsToCups(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_GallonsToCups_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.GallonsToCups(System.Nullable{System.Double})
+  name.vb: GallonsToCups(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.GallonsToCups(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.GallonsToCups(System.Nullable(Of System.Double))
+  nameWithType: Volume.GallonsToCups(Nullable<Double>)
+  nameWithType.vb: Volume.GallonsToCups(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.GallonsToCups*
+  name: GallonsToCups
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_GallonsToCups_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.GallonsToCups
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.GallonsToCups
+  nameWithType: Volume.GallonsToCups
+- uid: RWD.Toolbox.Conversion.Volume.GallonsToLiters(System.Nullable{System.Double})
+  name: GallonsToLiters(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_GallonsToLiters_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.GallonsToLiters(System.Nullable{System.Double})
+  name.vb: GallonsToLiters(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.GallonsToLiters(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.GallonsToLiters(System.Nullable(Of System.Double))
+  nameWithType: Volume.GallonsToLiters(Nullable<Double>)
+  nameWithType.vb: Volume.GallonsToLiters(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.GallonsToLiters*
+  name: GallonsToLiters
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_GallonsToLiters_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.GallonsToLiters
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.GallonsToLiters
+  nameWithType: Volume.GallonsToLiters
+- uid: RWD.Toolbox.Conversion.Volume.GallonsToOunces(System.Nullable{System.Double})
+  name: GallonsToOunces(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_GallonsToOunces_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.GallonsToOunces(System.Nullable{System.Double})
+  name.vb: GallonsToOunces(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.GallonsToOunces(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.GallonsToOunces(System.Nullable(Of System.Double))
+  nameWithType: Volume.GallonsToOunces(Nullable<Double>)
+  nameWithType.vb: Volume.GallonsToOunces(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.GallonsToOunces*
+  name: GallonsToOunces
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_GallonsToOunces_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.GallonsToOunces
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.GallonsToOunces
+  nameWithType: Volume.GallonsToOunces
+- uid: RWD.Toolbox.Conversion.Volume.GallonsToPints(System.Nullable{System.Double})
+  name: GallonsToPints(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_GallonsToPints_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.GallonsToPints(System.Nullable{System.Double})
+  name.vb: GallonsToPints(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.GallonsToPints(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.GallonsToPints(System.Nullable(Of System.Double))
+  nameWithType: Volume.GallonsToPints(Nullable<Double>)
+  nameWithType.vb: Volume.GallonsToPints(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.GallonsToPints*
+  name: GallonsToPints
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_GallonsToPints_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.GallonsToPints
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.GallonsToPints
+  nameWithType: Volume.GallonsToPints
+- uid: RWD.Toolbox.Conversion.Volume.GallonsToQuarts(System.Nullable{System.Double})
+  name: GallonsToQuarts(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_GallonsToQuarts_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.GallonsToQuarts(System.Nullable{System.Double})
+  name.vb: GallonsToQuarts(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.GallonsToQuarts(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.GallonsToQuarts(System.Nullable(Of System.Double))
+  nameWithType: Volume.GallonsToQuarts(Nullable<Double>)
+  nameWithType.vb: Volume.GallonsToQuarts(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.GallonsToQuarts*
+  name: GallonsToQuarts
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_GallonsToQuarts_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.GallonsToQuarts
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.GallonsToQuarts
+  nameWithType: Volume.GallonsToQuarts
+- uid: RWD.Toolbox.Conversion.Volume.LitersToGallons(System.Nullable{System.Double})
+  name: LitersToGallons(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_LitersToGallons_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.LitersToGallons(System.Nullable{System.Double})
+  name.vb: LitersToGallons(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.LitersToGallons(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.LitersToGallons(System.Nullable(Of System.Double))
+  nameWithType: Volume.LitersToGallons(Nullable<Double>)
+  nameWithType.vb: Volume.LitersToGallons(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.LitersToGallons*
+  name: LitersToGallons
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_LitersToGallons_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.LitersToGallons
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.LitersToGallons
+  nameWithType: Volume.LitersToGallons
+- uid: RWD.Toolbox.Conversion.Volume.LitersToMilliLiters(System.Nullable{System.Double})
+  name: LitersToMilliLiters(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_LitersToMilliLiters_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.LitersToMilliLiters(System.Nullable{System.Double})
+  name.vb: LitersToMilliLiters(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.LitersToMilliLiters(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.LitersToMilliLiters(System.Nullable(Of System.Double))
+  nameWithType: Volume.LitersToMilliLiters(Nullable<Double>)
+  nameWithType.vb: Volume.LitersToMilliLiters(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.LitersToMilliLiters*
+  name: LitersToMilliLiters
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_LitersToMilliLiters_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.LitersToMilliLiters
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.LitersToMilliLiters
+  nameWithType: Volume.LitersToMilliLiters
+- uid: RWD.Toolbox.Conversion.Volume.LitersToOunces(System.Nullable{System.Double})
+  name: LitersToOunces(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_LitersToOunces_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.LitersToOunces(System.Nullable{System.Double})
+  name.vb: LitersToOunces(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.LitersToOunces(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.LitersToOunces(System.Nullable(Of System.Double))
+  nameWithType: Volume.LitersToOunces(Nullable<Double>)
+  nameWithType.vb: Volume.LitersToOunces(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.LitersToOunces*
+  name: LitersToOunces
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_LitersToOunces_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.LitersToOunces
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.LitersToOunces
+  nameWithType: Volume.LitersToOunces
+- uid: RWD.Toolbox.Conversion.Volume.LitersToQuarts(System.Nullable{System.Double})
+  name: LitersToQuarts(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_LitersToQuarts_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.LitersToQuarts(System.Nullable{System.Double})
+  name.vb: LitersToQuarts(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.LitersToQuarts(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.LitersToQuarts(System.Nullable(Of System.Double))
+  nameWithType: Volume.LitersToQuarts(Nullable<Double>)
+  nameWithType.vb: Volume.LitersToQuarts(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.LitersToQuarts*
+  name: LitersToQuarts
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_LitersToQuarts_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.LitersToQuarts
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.LitersToQuarts
+  nameWithType: Volume.LitersToQuarts
+- uid: RWD.Toolbox.Conversion.Volume.MilliLitersToLiters(System.Nullable{System.Double})
+  name: MilliLitersToLiters(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_MilliLitersToLiters_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.MilliLitersToLiters(System.Nullable{System.Double})
+  name.vb: MilliLitersToLiters(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.MilliLitersToLiters(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.MilliLitersToLiters(System.Nullable(Of System.Double))
+  nameWithType: Volume.MilliLitersToLiters(Nullable<Double>)
+  nameWithType.vb: Volume.MilliLitersToLiters(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.MilliLitersToLiters*
+  name: MilliLitersToLiters
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_MilliLitersToLiters_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.MilliLitersToLiters
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.MilliLitersToLiters
+  nameWithType: Volume.MilliLitersToLiters
+- uid: RWD.Toolbox.Conversion.Volume.MilliLitersToOunces(System.Nullable{System.Double})
+  name: MilliLitersToOunces(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_MilliLitersToOunces_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.MilliLitersToOunces(System.Nullable{System.Double})
+  name.vb: MilliLitersToOunces(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.MilliLitersToOunces(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.MilliLitersToOunces(System.Nullable(Of System.Double))
+  nameWithType: Volume.MilliLitersToOunces(Nullable<Double>)
+  nameWithType.vb: Volume.MilliLitersToOunces(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.MilliLitersToOunces*
+  name: MilliLitersToOunces
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_MilliLitersToOunces_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.MilliLitersToOunces
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.MilliLitersToOunces
+  nameWithType: Volume.MilliLitersToOunces
+- uid: RWD.Toolbox.Conversion.Volume.MilliLitersToTablespoons(System.Nullable{System.Double})
+  name: MilliLitersToTablespoons(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_MilliLitersToTablespoons_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.MilliLitersToTablespoons(System.Nullable{System.Double})
+  name.vb: MilliLitersToTablespoons(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.MilliLitersToTablespoons(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.MilliLitersToTablespoons(System.Nullable(Of System.Double))
+  nameWithType: Volume.MilliLitersToTablespoons(Nullable<Double>)
+  nameWithType.vb: Volume.MilliLitersToTablespoons(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.MilliLitersToTablespoons*
+  name: MilliLitersToTablespoons
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_MilliLitersToTablespoons_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.MilliLitersToTablespoons
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.MilliLitersToTablespoons
+  nameWithType: Volume.MilliLitersToTablespoons
+- uid: RWD.Toolbox.Conversion.Volume.MilliLitersToTeaspoons(System.Nullable{System.Double})
+  name: MilliLitersToTeaspoons(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_MilliLitersToTeaspoons_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.MilliLitersToTeaspoons(System.Nullable{System.Double})
+  name.vb: MilliLitersToTeaspoons(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.MilliLitersToTeaspoons(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.MilliLitersToTeaspoons(System.Nullable(Of System.Double))
+  nameWithType: Volume.MilliLitersToTeaspoons(Nullable<Double>)
+  nameWithType.vb: Volume.MilliLitersToTeaspoons(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.MilliLitersToTeaspoons*
+  name: MilliLitersToTeaspoons
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_MilliLitersToTeaspoons_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.MilliLitersToTeaspoons
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.MilliLitersToTeaspoons
+  nameWithType: Volume.MilliLitersToTeaspoons
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToCups(System.Nullable{System.Double})
+  name: OuncesToCups(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToCups_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.OuncesToCups(System.Nullable{System.Double})
+  name.vb: OuncesToCups(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToCups(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.OuncesToCups(System.Nullable(Of System.Double))
+  nameWithType: Volume.OuncesToCups(Nullable<Double>)
+  nameWithType.vb: Volume.OuncesToCups(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToCups*
+  name: OuncesToCups
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToCups_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.OuncesToCups
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToCups
+  nameWithType: Volume.OuncesToCups
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToGallons(System.Nullable{System.Double})
+  name: OuncesToGallons(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToGallons_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.OuncesToGallons(System.Nullable{System.Double})
+  name.vb: OuncesToGallons(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToGallons(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.OuncesToGallons(System.Nullable(Of System.Double))
+  nameWithType: Volume.OuncesToGallons(Nullable<Double>)
+  nameWithType.vb: Volume.OuncesToGallons(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToGallons*
+  name: OuncesToGallons
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToGallons_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.OuncesToGallons
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToGallons
+  nameWithType: Volume.OuncesToGallons
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToLiters(System.Nullable{System.Double})
+  name: OuncesToLiters(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToLiters_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.OuncesToLiters(System.Nullable{System.Double})
+  name.vb: OuncesToLiters(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToLiters(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.OuncesToLiters(System.Nullable(Of System.Double))
+  nameWithType: Volume.OuncesToLiters(Nullable<Double>)
+  nameWithType.vb: Volume.OuncesToLiters(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToLiters*
+  name: OuncesToLiters
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToLiters_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.OuncesToLiters
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToLiters
+  nameWithType: Volume.OuncesToLiters
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToMilliLiters(System.Nullable{System.Double})
+  name: OuncesToMilliLiters(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToMilliLiters_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.OuncesToMilliLiters(System.Nullable{System.Double})
+  name.vb: OuncesToMilliLiters(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToMilliLiters(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.OuncesToMilliLiters(System.Nullable(Of System.Double))
+  nameWithType: Volume.OuncesToMilliLiters(Nullable<Double>)
+  nameWithType.vb: Volume.OuncesToMilliLiters(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToMilliLiters*
+  name: OuncesToMilliLiters
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToMilliLiters_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.OuncesToMilliLiters
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToMilliLiters
+  nameWithType: Volume.OuncesToMilliLiters
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToPints(System.Nullable{System.Double})
+  name: OuncesToPints(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToPints_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.OuncesToPints(System.Nullable{System.Double})
+  name.vb: OuncesToPints(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToPints(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.OuncesToPints(System.Nullable(Of System.Double))
+  nameWithType: Volume.OuncesToPints(Nullable<Double>)
+  nameWithType.vb: Volume.OuncesToPints(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToPints*
+  name: OuncesToPints
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToPints_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.OuncesToPints
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToPints
+  nameWithType: Volume.OuncesToPints
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToQuarts(System.Nullable{System.Double})
+  name: OuncesToQuarts(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToQuarts_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.OuncesToQuarts(System.Nullable{System.Double})
+  name.vb: OuncesToQuarts(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToQuarts(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.OuncesToQuarts(System.Nullable(Of System.Double))
+  nameWithType: Volume.OuncesToQuarts(Nullable<Double>)
+  nameWithType.vb: Volume.OuncesToQuarts(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToQuarts*
+  name: OuncesToQuarts
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToQuarts_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.OuncesToQuarts
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToQuarts
+  nameWithType: Volume.OuncesToQuarts
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToTablespoons(System.Nullable{System.Double})
+  name: OuncesToTablespoons(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToTablespoons_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.OuncesToTablespoons(System.Nullable{System.Double})
+  name.vb: OuncesToTablespoons(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToTablespoons(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.OuncesToTablespoons(System.Nullable(Of System.Double))
+  nameWithType: Volume.OuncesToTablespoons(Nullable<Double>)
+  nameWithType.vb: Volume.OuncesToTablespoons(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToTablespoons*
+  name: OuncesToTablespoons
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToTablespoons_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.OuncesToTablespoons
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToTablespoons
+  nameWithType: Volume.OuncesToTablespoons
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToTeaspoons(System.Nullable{System.Double})
+  name: OuncesToTeaspoons(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToTeaspoons_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.OuncesToTeaspoons(System.Nullable{System.Double})
+  name.vb: OuncesToTeaspoons(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToTeaspoons(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.OuncesToTeaspoons(System.Nullable(Of System.Double))
+  nameWithType: Volume.OuncesToTeaspoons(Nullable<Double>)
+  nameWithType.vb: Volume.OuncesToTeaspoons(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.OuncesToTeaspoons*
+  name: OuncesToTeaspoons
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_OuncesToTeaspoons_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.OuncesToTeaspoons
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.OuncesToTeaspoons
+  nameWithType: Volume.OuncesToTeaspoons
+- uid: RWD.Toolbox.Conversion.Volume.PintsToCups(System.Nullable{System.Double})
+  name: PintsToCups(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_PintsToCups_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.PintsToCups(System.Nullable{System.Double})
+  name.vb: PintsToCups(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.PintsToCups(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.PintsToCups(System.Nullable(Of System.Double))
+  nameWithType: Volume.PintsToCups(Nullable<Double>)
+  nameWithType.vb: Volume.PintsToCups(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.PintsToCups*
+  name: PintsToCups
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_PintsToCups_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.PintsToCups
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.PintsToCups
+  nameWithType: Volume.PintsToCups
+- uid: RWD.Toolbox.Conversion.Volume.PintsToGallons(System.Nullable{System.Double})
+  name: PintsToGallons(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_PintsToGallons_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.PintsToGallons(System.Nullable{System.Double})
+  name.vb: PintsToGallons(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.PintsToGallons(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.PintsToGallons(System.Nullable(Of System.Double))
+  nameWithType: Volume.PintsToGallons(Nullable<Double>)
+  nameWithType.vb: Volume.PintsToGallons(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.PintsToGallons*
+  name: PintsToGallons
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_PintsToGallons_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.PintsToGallons
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.PintsToGallons
+  nameWithType: Volume.PintsToGallons
+- uid: RWD.Toolbox.Conversion.Volume.PintsToOunces(System.Nullable{System.Double})
+  name: PintsToOunces(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_PintsToOunces_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.PintsToOunces(System.Nullable{System.Double})
+  name.vb: PintsToOunces(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.PintsToOunces(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.PintsToOunces(System.Nullable(Of System.Double))
+  nameWithType: Volume.PintsToOunces(Nullable<Double>)
+  nameWithType.vb: Volume.PintsToOunces(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.PintsToOunces*
+  name: PintsToOunces
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_PintsToOunces_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.PintsToOunces
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.PintsToOunces
+  nameWithType: Volume.PintsToOunces
+- uid: RWD.Toolbox.Conversion.Volume.PintsToQuarts(System.Nullable{System.Double})
+  name: PintsToQuarts(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_PintsToQuarts_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.PintsToQuarts(System.Nullable{System.Double})
+  name.vb: PintsToQuarts(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.PintsToQuarts(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.PintsToQuarts(System.Nullable(Of System.Double))
+  nameWithType: Volume.PintsToQuarts(Nullable<Double>)
+  nameWithType.vb: Volume.PintsToQuarts(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.PintsToQuarts*
+  name: PintsToQuarts
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_PintsToQuarts_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.PintsToQuarts
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.PintsToQuarts
+  nameWithType: Volume.PintsToQuarts
+- uid: RWD.Toolbox.Conversion.Volume.QuartsToCups(System.Nullable{System.Double})
+  name: QuartsToCups(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_QuartsToCups_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.QuartsToCups(System.Nullable{System.Double})
+  name.vb: QuartsToCups(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.QuartsToCups(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.QuartsToCups(System.Nullable(Of System.Double))
+  nameWithType: Volume.QuartsToCups(Nullable<Double>)
+  nameWithType.vb: Volume.QuartsToCups(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.QuartsToCups*
+  name: QuartsToCups
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_QuartsToCups_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.QuartsToCups
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.QuartsToCups
+  nameWithType: Volume.QuartsToCups
+- uid: RWD.Toolbox.Conversion.Volume.QuartsToGallons(System.Nullable{System.Double})
+  name: QuartsToGallons(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_QuartsToGallons_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.QuartsToGallons(System.Nullable{System.Double})
+  name.vb: QuartsToGallons(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.QuartsToGallons(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.QuartsToGallons(System.Nullable(Of System.Double))
+  nameWithType: Volume.QuartsToGallons(Nullable<Double>)
+  nameWithType.vb: Volume.QuartsToGallons(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.QuartsToGallons*
+  name: QuartsToGallons
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_QuartsToGallons_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.QuartsToGallons
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.QuartsToGallons
+  nameWithType: Volume.QuartsToGallons
+- uid: RWD.Toolbox.Conversion.Volume.QuartsToLiters(System.Nullable{System.Double})
+  name: QuartsToLiters(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_QuartsToLiters_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.QuartsToLiters(System.Nullable{System.Double})
+  name.vb: QuartsToLiters(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.QuartsToLiters(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.QuartsToLiters(System.Nullable(Of System.Double))
+  nameWithType: Volume.QuartsToLiters(Nullable<Double>)
+  nameWithType.vb: Volume.QuartsToLiters(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.QuartsToLiters*
+  name: QuartsToLiters
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_QuartsToLiters_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.QuartsToLiters
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.QuartsToLiters
+  nameWithType: Volume.QuartsToLiters
+- uid: RWD.Toolbox.Conversion.Volume.QuartsToOunces(System.Nullable{System.Double})
+  name: QuartsToOunces(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_QuartsToOunces_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.QuartsToOunces(System.Nullable{System.Double})
+  name.vb: QuartsToOunces(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.QuartsToOunces(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.QuartsToOunces(System.Nullable(Of System.Double))
+  nameWithType: Volume.QuartsToOunces(Nullable<Double>)
+  nameWithType.vb: Volume.QuartsToOunces(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.QuartsToOunces*
+  name: QuartsToOunces
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_QuartsToOunces_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.QuartsToOunces
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.QuartsToOunces
+  nameWithType: Volume.QuartsToOunces
+- uid: RWD.Toolbox.Conversion.Volume.QuartsToPints(System.Nullable{System.Double})
+  name: QuartsToPints(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_QuartsToPints_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.QuartsToPints(System.Nullable{System.Double})
+  name.vb: QuartsToPints(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.QuartsToPints(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.QuartsToPints(System.Nullable(Of System.Double))
+  nameWithType: Volume.QuartsToPints(Nullable<Double>)
+  nameWithType.vb: Volume.QuartsToPints(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.QuartsToPints*
+  name: QuartsToPints
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_QuartsToPints_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.QuartsToPints
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.QuartsToPints
+  nameWithType: Volume.QuartsToPints
+- uid: RWD.Toolbox.Conversion.Volume.TablespoonsToMilliLiters(System.Nullable{System.Double})
+  name: TablespoonsToMilliLiters(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_TablespoonsToMilliLiters_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.TablespoonsToMilliLiters(System.Nullable{System.Double})
+  name.vb: TablespoonsToMilliLiters(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.TablespoonsToMilliLiters(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.TablespoonsToMilliLiters(System.Nullable(Of System.Double))
+  nameWithType: Volume.TablespoonsToMilliLiters(Nullable<Double>)
+  nameWithType.vb: Volume.TablespoonsToMilliLiters(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.TablespoonsToMilliLiters*
+  name: TablespoonsToMilliLiters
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_TablespoonsToMilliLiters_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.TablespoonsToMilliLiters
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.TablespoonsToMilliLiters
+  nameWithType: Volume.TablespoonsToMilliLiters
+- uid: RWD.Toolbox.Conversion.Volume.TablespoonsToOunces(System.Nullable{System.Double})
+  name: TablespoonsToOunces(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_TablespoonsToOunces_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.TablespoonsToOunces(System.Nullable{System.Double})
+  name.vb: TablespoonsToOunces(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.TablespoonsToOunces(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.TablespoonsToOunces(System.Nullable(Of System.Double))
+  nameWithType: Volume.TablespoonsToOunces(Nullable<Double>)
+  nameWithType.vb: Volume.TablespoonsToOunces(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.TablespoonsToOunces*
+  name: TablespoonsToOunces
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_TablespoonsToOunces_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.TablespoonsToOunces
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.TablespoonsToOunces
+  nameWithType: Volume.TablespoonsToOunces
+- uid: RWD.Toolbox.Conversion.Volume.TablespoonsToTeaspoons(System.Nullable{System.Double})
+  name: TablespoonsToTeaspoons(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_TablespoonsToTeaspoons_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.TablespoonsToTeaspoons(System.Nullable{System.Double})
+  name.vb: TablespoonsToTeaspoons(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.TablespoonsToTeaspoons(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.TablespoonsToTeaspoons(System.Nullable(Of System.Double))
+  nameWithType: Volume.TablespoonsToTeaspoons(Nullable<Double>)
+  nameWithType.vb: Volume.TablespoonsToTeaspoons(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.TablespoonsToTeaspoons*
+  name: TablespoonsToTeaspoons
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_TablespoonsToTeaspoons_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.TablespoonsToTeaspoons
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.TablespoonsToTeaspoons
+  nameWithType: Volume.TablespoonsToTeaspoons
+- uid: RWD.Toolbox.Conversion.Volume.TeaspoonsToMilliLiters(System.Nullable{System.Double})
+  name: TeaspoonsToMilliLiters(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_TeaspoonsToMilliLiters_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.TeaspoonsToMilliLiters(System.Nullable{System.Double})
+  name.vb: TeaspoonsToMilliLiters(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.TeaspoonsToMilliLiters(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.TeaspoonsToMilliLiters(System.Nullable(Of System.Double))
+  nameWithType: Volume.TeaspoonsToMilliLiters(Nullable<Double>)
+  nameWithType.vb: Volume.TeaspoonsToMilliLiters(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.TeaspoonsToMilliLiters*
+  name: TeaspoonsToMilliLiters
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_TeaspoonsToMilliLiters_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.TeaspoonsToMilliLiters
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.TeaspoonsToMilliLiters
+  nameWithType: Volume.TeaspoonsToMilliLiters
+- uid: RWD.Toolbox.Conversion.Volume.TeaspoonsToOunces(System.Nullable{System.Double})
+  name: TeaspoonsToOunces(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_TeaspoonsToOunces_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.TeaspoonsToOunces(System.Nullable{System.Double})
+  name.vb: TeaspoonsToOunces(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.TeaspoonsToOunces(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.TeaspoonsToOunces(System.Nullable(Of System.Double))
+  nameWithType: Volume.TeaspoonsToOunces(Nullable<Double>)
+  nameWithType.vb: Volume.TeaspoonsToOunces(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.TeaspoonsToOunces*
+  name: TeaspoonsToOunces
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_TeaspoonsToOunces_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.TeaspoonsToOunces
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.TeaspoonsToOunces
+  nameWithType: Volume.TeaspoonsToOunces
+- uid: RWD.Toolbox.Conversion.Volume.TeaspoonsToTablespoons(System.Nullable{System.Double})
+  name: TeaspoonsToTablespoons(Nullable<Double>)
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_TeaspoonsToTablespoons_System_Nullable_System_Double__
+  commentId: M:RWD.Toolbox.Conversion.Volume.TeaspoonsToTablespoons(System.Nullable{System.Double})
+  name.vb: TeaspoonsToTablespoons(Nullable(Of Double))
+  fullName: RWD.Toolbox.Conversion.Volume.TeaspoonsToTablespoons(System.Nullable<System.Double>)
+  fullName.vb: RWD.Toolbox.Conversion.Volume.TeaspoonsToTablespoons(System.Nullable(Of System.Double))
+  nameWithType: Volume.TeaspoonsToTablespoons(Nullable<Double>)
+  nameWithType.vb: Volume.TeaspoonsToTablespoons(Nullable(Of Double))
+- uid: RWD.Toolbox.Conversion.Volume.TeaspoonsToTablespoons*
+  name: TeaspoonsToTablespoons
+  href: api/RWD.Toolbox.Conversion.Volume.html#RWD_Toolbox_Conversion_Volume_TeaspoonsToTablespoons_
+  commentId: Overload:RWD.Toolbox.Conversion.Volume.TeaspoonsToTablespoons
+  isSpec: "True"
+  fullName: RWD.Toolbox.Conversion.Volume.TeaspoonsToTablespoons
+  nameWithType: Volume.TeaspoonsToTablespoons
