@@ -57,7 +57,7 @@ namespace RWD.Toolbox.Conversion
         /// </summary>
         /// <param name="g">Grams as <see cref="Nullable{Double}"/></param>
         /// <returns>KiloGrams as <see cref="Nullable{Double}"/></returns>
-        /// <remarks>1 gram =null.001 kilograms</remarks>
+        /// <remarks>1 gram = 0.001 kilograms</remarks>
         public static double? GramsToKiloGrams(double? g)
         {
             double? kiloGrams = null;
@@ -90,7 +90,7 @@ namespace RWD.Toolbox.Conversion
         /// </summary>
         /// <param name="mg">MilliGrams as <see cref="Nullable{Double}"/></param>
         /// <returns>Grams as <see cref="Nullable{Double}"/></returns>
-        /// <remarks>1 milligram =null.001 grams</remarks>
+        /// <remarks>1 milligram = 0.001 grams</remarks>
         public static double? MilliGramsToGrams(double? mg)
         {
             double? grams = null;
@@ -104,7 +104,7 @@ namespace RWD.Toolbox.Conversion
         /// </summary>
         /// <param name="oz">Ounces as <see cref="Nullable{Double}"/></param>
         /// <returns>Pounds as <see cref="Nullable{Double}"/></returns>
-        /// <remarks>1 ounce =null.0625 pounds</remarks>
+        /// <remarks>1 ounce = 0.0625 pounds</remarks>
         public static double? OuncesToPounds(double? oz)
         {
             double? pounds = null;
@@ -154,7 +154,7 @@ namespace RWD.Toolbox.Conversion
         /// </summary>
         /// <param name="g">Grams as <see cref="Nullable{Double}"/></param>
         /// <returns>Ounces as <see cref="Nullable{Double}"/></returns>
-        /// <remarks>1 gram =null.0352739619 ounces</remarks>
+        /// <remarks>1 gram = 0.0352739619 ounces</remarks>
         public static double? GramsToOunces(double? g)
         {
             double? ounces = null;
@@ -200,12 +200,12 @@ namespace RWD.Toolbox.Conversion
         /// </summary>
         /// <param name="lbs">Pounds as <see cref="Nullable{Double}"/></param>
         /// <returns>US Tons as <see cref="Nullable{Double}"/></returns>
-        /// <remarks>1 Pound = .0005 US Ton</remarks>
+        /// <remarks>1 Pound = 0.0005 US Ton</remarks>
         public static double? PoundsToTons(double? lbs)
         {
             double? tons = null;
             if (lbs != null)
-                tons = lbs * .0005;
+                tons = lbs * 0.0005;
             return tons;
         }
 
@@ -237,7 +237,7 @@ namespace RWD.Toolbox.Conversion
         {
             double? tons = null;
             if (kg != null)
-                tons = kg * .001;
+                tons = kg * 0.001;
             return tons;
         }
 
