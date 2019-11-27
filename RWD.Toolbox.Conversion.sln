@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio 16
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RWD.Toolbox.Conversion", "RWD.Toolbox.Conversion\RWD.Toolbox.Conversion.csproj", "{978D2C11-247A-48CF-9B0E-F245E6EC79B4}"
